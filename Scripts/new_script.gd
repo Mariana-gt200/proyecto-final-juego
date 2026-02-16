@@ -17,11 +17,11 @@ var current_speed = WALK_SPEED
 
 func _physics_process(delta):
 	# 1. Detectar dirección (basado en lo que pusiste en el Input Map)
-	var direction = Input.get_vector("mover_izquierda", "mover_derecha", "mover_arriba", "mover_abajo", "sprint")
+	var direction = Input.get_vector("mover_izquierda", "mover_derecha", "mover_arriba", "mover_abajo")
 	
 	# 2. Aplicar movimiento físico
 	if Input.is_action_pressed("sprint"):
-    	current_speed = SPRINT_SPEED
+		current_speed = SPRINT_SPEED
 
 	if direction != Vector2.ZERO:
 		# Si hay movimiento, aceleramos hacia la dirección
