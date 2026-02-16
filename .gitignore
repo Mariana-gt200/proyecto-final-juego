@@ -1,3 +1,11 @@
-# Godot 4+ specific ignores
+# Godot 4+ ignores
 .godot/
-/android/
+*.import
+export_presets.cfg
+
+# VS Code ignores
+.vscode/
+
+# Binaries y temporales
+*.tmp
+*.log
