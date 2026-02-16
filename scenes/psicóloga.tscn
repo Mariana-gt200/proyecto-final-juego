@@ -39,12 +39,23 @@ _data = {
 &"caminar ": SubResource("Animation_sl1ro")
 }
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2buh"]
+radius = 6.1393585
+height = 71.65282
+
 [node name="Psicóloga" type="CharacterBody2D" unique_id=1948992752]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=810551210]
-position = Vector2(1, 1)
+position = Vector2(-2, -1.9999847)
+scale = Vector2(3.6341844, 3.5294454)
 texture = ExtResource("1_q2buh")
 hframes = 12
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=553739470]
 libraries/ = SubResource("AnimationLibrary_w76yw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113873984]
+position = Vector2(-2, 214)
+rotation = -1.5562404
+scale = Vector2(1.4871359, 0.99982935)
+shape = SubResource("CapsuleShape2D_q2buh")
