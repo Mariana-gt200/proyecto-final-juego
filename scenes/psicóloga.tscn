@@ -41,7 +41,7 @@ _data = {
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2buh"]
 radius = 6.1393585
-height = 71.65282
+height = 137.86339
 
 [node name="Psicóloga" type="CharacterBody2D" unique_id=1948992752]
 
