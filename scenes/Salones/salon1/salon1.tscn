@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://x34jceuhntuc"]
+
+[ext_resource type="Texture2D" uid="uid://b4ou3eak6gv2e" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoor second version tiling/strokespritesheet20121.png" id="1_8md22"]
+
+[node name="Main" type="Node2D" unique_id=1423917372]
+
+[node name="Fondo salon 1" type="Sprite2D" parent="." unique_id=2097844354]
+z_index = -1
+position = Vector2(570, 333.00003)
+scale = Vector2(4.7, 4.7)
+texture = ExtResource("1_8md22")
+region_enabled = true
+region_rect = Rect2(452.4042, 55.65774, 247.37448, 142.07648)
