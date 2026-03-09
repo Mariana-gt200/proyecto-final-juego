@@ -6,7 +6,8 @@ const SPRINT_SPEED = 300.0
 const ACCEL = 800.0
 const FRICTION = 1000.0
 
-@onready var anim_player = $psicologa
+# Busca al nodo HIJO que se encarga de las animaciones
+@onready var anim_player = $AnimationPlayer
 
 func _physics_process(delta):
 	# 2. Lógica del Sprint (Se reinicia a WALK_SPEED en cada frame)
