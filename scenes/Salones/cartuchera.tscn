@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d0i6fpyd46580"]
+
+[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="1_yt6yb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqsxr"]
+size = Vector2(63, 13.25)
+
+[node name="Cartuchera" type="StaticBody2D" unique_id=983400329]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=582696059]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_yt6yb")
+offset = Vector2(0, -300)
+region_enabled = true
+region_rect = Rect2(379.76965, 472.08154, 218.25653, 174.60522)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=955112761]
+shape = SubResource("RectangleShape2D_pqsxr")

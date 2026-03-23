@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bq1ogdxbg3tea"]
+
+[ext_resource type="Texture2D" uid="uid://csxd1y3ynku8e" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 3.png" id="1_qm8cx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dtfrw"]
+size = Vector2(81.5, 29.4375)
+
+[node name="Mesa" type="StaticBody2D" unique_id=875276416]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1830282691]
+position = Vector2(0, 1.000001)
+scale = Vector2(0.8, 0.568)
+texture = ExtResource("1_qm8cx")
+offset = Vector2(0, -40)
+region_enabled = true
+region_rect = Rect2(423.77612, 820.7831, 176.44727, 187.4751)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1750347215]
+y_sort_enabled = true
+position = Vector2(4, 17)
+scale = Vector2(0.8, 0.8)
+shape = SubResource("RectangleShape2D_dtfrw")

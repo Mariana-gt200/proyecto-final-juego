@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dgyc8eijyals7"]
+
+[ext_resource type="Texture2D" uid="uid://dgvo28yki52pp" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="1_35he8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyg4j"]
+size = Vector2(594.19934, 59.13307)
+
+[node name="Estanteria" type="StaticBody2D" unique_id=1842337419]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1086191795]
+position = Vector2(-0.99998474, 1.0000153)
+scale = Vector2(0.6, 0.682)
+texture = ExtResource("1_35he8")
+offset = Vector2(0, -90)
+region_enabled = true
+region_rect = Rect2(24.412842, 157.63177, 590.5144, 243.70401)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=689247691]
+y_sort_enabled = true
+scale = Vector2(0.6, 0.682)
+shape = SubResource("RectangleShape2D_wyg4j")

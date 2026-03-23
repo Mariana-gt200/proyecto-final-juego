@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://m024fkiegi55"]
+
+[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="1_goyyj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
+size = Vector2(60, 10.25)
+
+[node name="Lapices2" type="StaticBody2D" unique_id=1611322162]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=654540713]
+position = Vector2(961.00006, 416)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_goyyj")
+offset = Vector2(0, -200)
+region_enabled = true
+region_rect = Rect2(305.41635, 858.32153, 118.09613, 79.3761)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1604409061]
+position = Vector2(964, 418.125)
+shape = SubResource("RectangleShape2D_sww78")
