@@ -59,7 +59,6 @@ _data = {
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2buh"]
 radius = 1.3349342
-height = 56.003628
 
 [node name="psicologa" type="CharacterBody2D" unique_id=1170587380]
 script = ExtResource("1_egq3c")
