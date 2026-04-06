@@ -14,7 +14,8 @@ height = 138.0
 y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=751334593]
-position = Vector2(1115, 212)
+y_sort_enabled = true
+position = Vector2(-1, 0)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("1_ha45t")
 offset = Vector2(0, -50)
@@ -24,10 +25,10 @@ region_rect = Rect2(765.5309, 174.0638, 69.091675, 131.7777)
 [node name="Area2D" type="Area2D" parent="." unique_id=133975274]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1115095137]
-position = Vector2(1111, 152)
+position = Vector2(1, -61)
 scale = Vector2(1.1999999, 1.2)
 shape = SubResource("CapsuleShape2D_wyk6o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1439212081]
-position = Vector2(1112, 148)
+position = Vector2(1, -60)
 shape = SubResource("CapsuleShape2D_pqsxr")

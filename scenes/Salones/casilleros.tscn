@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ckaw7uw2bxwjh"]
+
+[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="1_e6sen"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6sen"]
+size = Vector2(72, 37)
+
+[node name="CasillerosAzules" type="StaticBody2D" unique_id=513799136]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1770621641]
+y_sort_enabled = true
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_e6sen")
+offset = Vector2(0, -50)
+flip_h = true
+region_enabled = true
+region_rect = Rect2(775.09595, 181.67899, 49.88733, 117.12799)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1434242787]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_e6sen")
+debug_color = Color(0.6531184, 0.5123129, 0.22962356, 0.41960785)

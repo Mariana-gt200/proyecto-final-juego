@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ctbindktcrn5w"]
+
+[ext_resource type="Script" uid="uid://nabvsa6esycb" path="res://scenes/Salones/puerta_teletransportadora.gd" id="1_higxs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60w1e"]
+size = Vector2(82, 166)
+
+[node name="puerta_teletransportadora" type="Area2D" unique_id=1525846686]
+script = ExtResource("1_higxs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=734750579]
+shape = SubResource("RectangleShape2D_60w1e")
+debug_color = Color(0.7484343, 0.054926112, 5.7756904e-07, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
