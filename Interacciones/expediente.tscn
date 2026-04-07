@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d13q505ljogjg"]
+
+[ext_resource type="Script" uid="uid://djayt6sdpkhea" path="res://expediente.gd" id="1_rl80q"]
+[ext_resource type="Texture2D" uid="uid://c7448mlyu4x0t" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_qk14r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pbdq1"]
+radius = 89.140335
+
+[node name="Expediente" type="Area2D" unique_id=328183346]
+script = ExtResource("1_rl80q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647776715]
+texture = ExtResource("2_qk14r")
+region_enabled = true
+region_rect = Rect2(14.684238, 184.41054, 58.40994, 48.0316)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2002026057]
+shape = SubResource("CircleShape2D_pbdq1")
+debug_color = Color(0.84416556, 0.32584852, 0.51211923, 0.41960785)

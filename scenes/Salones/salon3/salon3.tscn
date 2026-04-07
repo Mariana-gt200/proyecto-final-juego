@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="10_xsekw"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="11_6bk6s"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_rdcbr"]
+[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="12_878pw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_saxt8")
@@ -573,4 +574,29 @@ position = Vector2(1028, 407)
 position = Vector2(1015, 114)
 escena_destino = "uid://suhivdjgfra1"
 
+[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("12_878pw")]
+position = Vector2(866, 260)
+nombre_alumno = "Erika"
+informacion = "Ficha Técnica:
+
+Edad: 16 años
+Grado: 11-D
+Estado: Monitoreo por ausentismo y posible crisis de salud.
+
+Informe de la Semana:
+
+Erika siempre ha sido el modelo de puntualidad y atención en el grado 11-D. Posee una naturaleza introvertida pero una disposición sumamente agradable hacia sus docentes. Sin embargo, su registro de asistencia muestra una caída alarmante del 40% en el último mes.
+
+Observaciones de campo: Se le ha visto refugiarse en los baños del segundo piso durante los descansos. Al salir, presenta una tristeza profunda y una palidez inusual. Los docentes reportan que su rendimiento académico ha colapsado; ya no entrega trabajos grupales y se aísla de sus compañeros, con quienes solía tener una relación cordial pero distante.
+
+Nota confidencial: Los síntomas (fatiga extrema, aislamiento post-almuerzo y decaimiento anímico) sugieren un posible Trastorno de la Conducta Alimentaria (TCA) o un cuadro depresivo mayor. Existe una desconexión total con su entorno. Debo intervenir antes de que su integridad física corra peligro."
+
+[node name="Sprite2D" parent="Expediente" index="0" unique_id=1647776715]
+position = Vector2(-790, -137)
+offset = Vector2(0, -60)
+
+[node name="CollisionShape2D" parent="Expediente" index="1" unique_id=2002026057]
+position = Vector2(-791, -193)
+
 [editable path="Casillero interactivo"]
+[editable path="Expediente"]

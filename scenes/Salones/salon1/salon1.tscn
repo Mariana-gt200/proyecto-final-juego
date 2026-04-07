@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://x34jceuhntuc"]
 
 [ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_sg84n"]
+[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="2_jjobq"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="2_kc6b5"]
 [ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="3_1feyj"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="4_m03mc"]
@@ -523,6 +524,9 @@ size = Vector2(61, 712)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jjobq"]
 size = Vector2(258, 163.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60w1e"]
+size = Vector2(268, 199)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5igfb"]
 size = Vector2(63.5, 13)
 
@@ -562,7 +566,7 @@ position = Vector2(-26, 361)
 shape = SubResource("RectangleShape2D_sg84n")
 
 [node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=268124758]
-position = Vector2(591, 758)
+position = Vector2(470, 756)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=2061851109]
@@ -577,6 +581,29 @@ shape = SubResource("RectangleShape2D_jjobq")
 position = Vector2(1139.25, 49)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_jjobq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimitesSalon" unique_id=157138725]
+position = Vector2(1092, 740)
+shape = SubResource("RectangleShape2D_60w1e")
+
+[node name="Expediente" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("2_jjobq")]
+position = Vector2(200, 514)
+nombre_alumno = "Jessica"
+informacion = "Ficha Técnica:
+
+Edad: 14 años
+
+Grado: 9-A
+
+Estado: Alerta por cambio conductual drástico.
+
+Informe de la Semana:
+
+Se observa una involución preocupante en la personalidad de Jessica. De ser una alumna extrovertida y el motor social de su clase, ha pasado a un estado de retraimiento absoluto. Participa lo mínimo en clase y evita el contacto visual con sus antiguos amigos.
+
+Observaciones de campo: He notado un patrón repetitivo: varios alumnos le entregan notas de papel de manera hostil durante los cambios de clase. La expresión de Jessica al recibirlas es de terror, no de complicidad. Existe el rumor de que, por miedo a represalias, no destruye estas notas, sino que las oculta en un punto ciego de la escuela para tener 'pruebas' en el futuro.
+
+Nota personal: El acoso escolar parece haber escalado a amenazas físicas. Debo localizar ese escondite; sospecho que algún casillero que ella considere seguro es la clave para desmantelar este círculo de violencia."
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("4_m03mc")]
 y_sort_enabled = true
@@ -677,7 +704,7 @@ position = Vector2(231, 441)
 shape = SubResource("RectangleShape2D_1hwcl")
 
 [node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("6_wyk6o")]
-position = Vector2(188, 572)
+position = Vector2(148, 511)
 
 [node name="Tablero" type="StaticBody2D" parent="." unique_id=1494333804]
 

@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_cv8ev"]
 [ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="11_yqxa8"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_r7kci"]
+[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_f74qe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_5pbk8")
@@ -748,11 +749,26 @@ position = Vector2(875, 27)
 flip_h = true
 
 [node name="CollisionShape2D" parent="MesaProfesor" index="1" unique_id=41123580]
-position = Vector2(880, -22)
+position = Vector2(891, 46.99997)
 rotation = 1.1397
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_r7kci")]
 position = Vector2(1015, 116)
 escena_destino = "uid://suhivdjgfra1"
+
+[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("13_f74qe")]
+position = Vector2(630, 176)
+scale = Vector2(0.5, 0.5)
+nombre_alumno = "Carlos"
+informacion = "Edad: 17 años
+Grado: 10-F
+Personalidad: bastante extrovertido y social
+Comportamiento: agresivo y evasivo, especialmente con los maestros
+
+Informe de la semana:
+Carlos ha estado comportándose de manera indebida ante sus maestros y compañeros. Se observa una actitud defensiva extrema; cualquier corrección académica detona un episodio de ira o evasión inmediata.
+
+Nota confidencial: Se han detectado moretones en los antebrazos que el alumno justifica como 'accidentes domésticos'. Existe una correlación directa entre sus bajas notas en matemáticas y su nivel de ansiedad. Sospecho una dinámica familiar punitiva y violenta ante el fracaso escolar. El alumno se niega a profundizar. 
+Sugerencia: Entrevistar a compañeros cercanos para verificar su entorno fuera del aula."
 
 [editable path="MesaProfesor"]
