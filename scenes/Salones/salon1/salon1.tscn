@@ -587,7 +587,7 @@ position = Vector2(1092, 740)
 shape = SubResource("RectangleShape2D_60w1e")
 
 [node name="Expediente" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("2_jjobq")]
-position = Vector2(200, 514)
+position = Vector2(197, 598)
 nombre_alumno = "Jessica"
 informacion = "Ficha Técnica:
 
@@ -704,7 +704,7 @@ position = Vector2(231, 441)
 shape = SubResource("RectangleShape2D_1hwcl")
 
 [node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("6_wyk6o")]
-position = Vector2(148, 511)
+position = Vector2(143, 567)
 
 [node name="Tablero" type="StaticBody2D" parent="." unique_id=1494333804]
 

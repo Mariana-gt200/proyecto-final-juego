@@ -15,10 +15,6 @@ run/main_scene="uid://dui2svc3wdtn1"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://dh78oiu2mfxgf"
 
-[autoload]
-
-Transicion="*uid://8et1h2vtuy4q"
-
 [input]
 
 mover_izquierda={

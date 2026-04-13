@@ -496,7 +496,7 @@ position = Vector2(181, 183)
 position = Vector2(545, 392)
 
 [node name="Mesa17" parent="." unique_id=1188769030 instance=ExtResource("3_mt1lj")]
-position = Vector2(823, 360)
+position = Vector2(769, 357)
 
 [node name="Mesa18" parent="." unique_id=51941947 instance=ExtResource("3_mt1lj")]
 position = Vector2(820, 618)
@@ -505,7 +505,7 @@ position = Vector2(820, 618)
 position = Vector2(824, 567)
 
 [node name="Mesa20" parent="." unique_id=527062574 instance=ExtResource("3_mt1lj")]
-position = Vector2(907, 481)
+position = Vector2(878, 477)
 
 [node name="Tablero" type="StaticBody2D" parent="." unique_id=1494333804]
 
@@ -537,7 +537,7 @@ position = Vector2(174, 384)
 shape = SubResource("RectangleShape2D_pqsxr")
 
 [node name="Cartuchera2" parent="." unique_id=983400329 instance=ExtResource("9_nvdc2")]
-position = Vector2(907, 502)
+position = Vector2(881, 498)
 
 [node name="Cartuchera3" parent="." unique_id=1848114852 instance=ExtResource("9_nvdc2")]
 position = Vector2(540, 363)
@@ -565,6 +565,8 @@ position = Vector2(-141, 178)
 position = Vector2(407, 203)
 
 [node name="Sprite2D" parent="Casillero interactivo" index="0" unique_id=751334593]
+position = Vector2(3.8000002, -1.7038056)
+scale = Vector2(1.3391304, 1.3099236)
 flip_h = true
 
 [node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("10_xsekw")]
@@ -575,7 +577,7 @@ position = Vector2(1015, 114)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("12_878pw")]
-position = Vector2(866, 260)
+position = Vector2(1069, 469)
 nombre_alumno = "Erika"
 informacion = "Ficha Técnica:
 
@@ -591,12 +593,4 @@ Observaciones de campo: Se le ha visto refugiarse en los baños del segundo piso
 
 Nota confidencial: Los síntomas (fatiga extrema, aislamiento post-almuerzo y decaimiento anímico) sugieren un posible Trastorno de la Conducta Alimentaria (TCA) o un cuadro depresivo mayor. Existe una desconexión total con su entorno. Debo intervenir antes de que su integridad física corra peligro."
 
-[node name="Sprite2D" parent="Expediente" index="0" unique_id=1647776715]
-position = Vector2(-790, -137)
-offset = Vector2(0, -60)
-
-[node name="CollisionShape2D" parent="Expediente" index="1" unique_id=2002026057]
-position = Vector2(-791, -193)
-
 [editable path="Casillero interactivo"]
-[editable path="Expediente"]

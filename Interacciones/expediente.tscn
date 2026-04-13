@@ -6,14 +6,52 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_pbdq1"]
 radius = 89.140335
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rl80q"]
+bg_color = Color(18.892157, 18.892157, 18.892157, 0.6784314)
+
 [node name="Expediente" type="Area2D" unique_id=328183346]
 script = ExtResource("1_rl80q")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647776715]
 texture = ExtResource("2_qk14r")
+offset = Vector2(0, -100)
 region_enabled = true
 region_rect = Rect2(14.684238, 184.41054, 58.40994, 48.0316)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2002026057]
+position = Vector2(0, -96)
 shape = SubResource("CircleShape2D_pbdq1")
 debug_color = Color(0.84416556, 0.32584852, 0.51211923, 0.41960785)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=860870644]
+layer = 10
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1267407552]
+self_modulate = Color(10.118502, 10.698661, 10.501161, 1)
+z_index = 10
+y_sort_enabled = true
+clip_contents = true
+anchors_preset = -1
+anchor_left = 0.252
+anchor_top = 0.053
+anchor_right = 0.662
+anchor_bottom = 0.922
+offset_left = 0.43197632
+offset_top = 0.13599968
+offset_right = 0.2399292
+offset_bottom = -0.2880249
+rotation = -0.043072082
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rl80q")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel" unique_id=785504511]
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0037604463
+bbcode_enabled = true
+vertical_alignment = 3
