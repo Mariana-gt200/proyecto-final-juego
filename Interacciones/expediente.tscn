@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d13q505ljogjg"]
 
 [ext_resource type="Script" uid="uid://djayt6sdpkhea" path="res://expediente.gd" id="1_rl80q"]
-[ext_resource type="Texture2D" uid="uid://c7448mlyu4x0t" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_qk14r"]
+[ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_qk14r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pbdq1"]
 radius = 89.140335
@@ -50,6 +50,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 17.963999
+offset_top = 15.929432
+offset_right = -11.646393
+offset_bottom = -17.27002
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.0037604463
