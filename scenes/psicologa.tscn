@@ -75,6 +75,8 @@ root_node = NodePath("../Sprite2D")
 libraries/ = SubResource("AnimationLibrary_kl5bu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113873984]
+light_mask = 0
+visibility_layer = 0
 y_sort_enabled = true
 position = Vector2(5, 7)
 rotation = -1.5562404

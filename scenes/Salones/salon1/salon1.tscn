@@ -1,18 +1,19 @@
 [gd_scene format=4 uid="uid://x34jceuhntuc"]
 
-[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_sg84n"]
+[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_sg84n"]
 [ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="2_jjobq"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="2_kc6b5"]
 [ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="3_1feyj"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="4_m03mc"]
-[ext_resource type="Texture2D" uid="uid://cbryfovttjhrv" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_m03mc"]
+[ext_resource type="Texture2D" uid="uid://d0610uekekqs6" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_m03mc"]
 [ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="6_wyk6o"]
-[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_skegk"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_1hwcl"]
+[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_skegk"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_1hwcl"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="9_wyk6o"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="10_pqsxr"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_wyk6o"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_pqsxr"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_60w1e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_sg84n")
@@ -704,7 +705,7 @@ position = Vector2(231, 441)
 shape = SubResource("RectangleShape2D_1hwcl")
 
 [node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("6_wyk6o")]
-position = Vector2(143, 567)
+position = Vector2(132, 569)
 
 [node name="Tablero" type="StaticBody2D" parent="." unique_id=1494333804]
 
@@ -765,3 +766,6 @@ position = Vector2(1108, 190)
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_pqsxr")]
 position = Vector2(1014, 118)
 escena_destino = "uid://suhivdjgfra1"
+
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("13_60w1e")]
+position = Vector2(230, 460)
