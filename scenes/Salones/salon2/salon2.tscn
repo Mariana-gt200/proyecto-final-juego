@@ -749,7 +749,7 @@ position = Vector2(875, 27)
 flip_h = true
 
 [node name="CollisionShape2D" parent="MesaProfesor" index="1" unique_id=41123580]
-position = Vector2(891, 46.99997)
+position = Vector2(887, 13.9999695)
 rotation = 1.1397
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_r7kci")]

@@ -12,11 +12,12 @@ y_sort_enabled = true
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1326520575]
 scale = Vector2(0.61951214, 0.5408971)
 texture = ExtResource("1_m82gb")
+offset = Vector2(0, -100)
 region_enabled = true
 region_rect = Rect2(22.549164, 616.5405, 410.84915, 379.48285)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=41123580]
-position = Vector2(-12, 26)
-rotation = 1.977458
+position = Vector2(-8, -11)
+rotation = 2.0294352
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("CapsuleShape2D_wyk6o")
