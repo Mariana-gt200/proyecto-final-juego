@@ -1,6 +1,6 @@
 extends Area2D
 
-# 🌍 Esta línea crea una casilla en el Inspector para elegir el salón
+# Esta línea crea una casilla en el Inspector para elegir el salón
 @export_file("*.tscn") var escena_destino
 
 func _on_body_entered(body: Node2D):
