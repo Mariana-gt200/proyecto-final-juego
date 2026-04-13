@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bogdp8irgw8k0"]
+
+[ext_resource type="Texture2D" uid="uid://dves0wo7jwvaf" path="res://texturas/Personajes/MemaoCharacterFantasySpritePack/007.png" id="1_ocxuv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocxuv"]
+radius = 1.0
+height = 26.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ys6nl"]
+radius = 29.0
+height = 86.0
+
+[node name="director" type="CharacterBody2D" unique_id=909311089]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=28931002]
+scale = Vector2(2, 2)
+texture = ExtResource("1_ocxuv")
+offset = Vector2(0, -18)
+hframes = 8
+vframes = 21
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1878656387]
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_ocxuv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=20494436]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1311911267]
+y_sort_enabled = true
+position = Vector2(0, -30)
+shape = SubResource("CapsuleShape2D_ys6nl")
+debug_color = Color(0.19892812, 0.63923055, 0.15381137, 0.41960785)
