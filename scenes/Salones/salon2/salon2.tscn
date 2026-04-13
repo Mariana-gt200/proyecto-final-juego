@@ -1,18 +1,19 @@
 [gd_scene format=4 uid="uid://daynur12fbyml"]
 
-[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_5pbk8"]
+[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_5pbk8"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_7igra"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_lfep3"]
 [ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_rwdpd"]
-[ext_resource type="Texture2D" uid="uid://cbryfovttjhrv" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_3eibv"]
-[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_8iaoo"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_vo7sv"]
+[ext_resource type="Texture2D" uid="uid://d0610uekekqs6" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_3eibv"]
+[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_8iaoo"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_vo7sv"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="9_68p30"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="10_c4tim"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_cv8ev"]
 [ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="11_yqxa8"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_r7kci"]
 [ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_f74qe"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_p6ck2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_5pbk8")
@@ -771,5 +772,8 @@ Carlos ha estado comportándose de manera indebida ante sus maestros y compañer
 
 Nota confidencial: Se han detectado moretones en los antebrazos que el alumno justifica como 'accidentes domésticos'. Existe una correlación directa entre sus bajas notas en matemáticas y su nivel de ansiedad. Sospecho una dinámica familiar punitiva y violenta ante el fracaso escolar. El alumno se niega a profundizar. 
 Sugerencia: Entrevistar a compañeros cercanos para verificar su entorno fuera del aula."
+
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_p6ck2")]
+position = Vector2(681, 173)
 
 [editable path="MesaProfesor"]
