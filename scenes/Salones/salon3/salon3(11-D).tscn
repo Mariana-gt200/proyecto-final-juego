@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_vm2yk"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="14_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_51nep"]
+[ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_7agvf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_6rdng")
@@ -628,5 +629,14 @@ position = Vector2(632, 457)
 
 [node name="CharacterBody2D5" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
 position = Vector2(566, 585)
+
+[node name="estudiantes2-11-D" parent="." unique_id=2114698328 instance=ExtResource("16_7agvf")]
+position = Vector2(134, 611)
+
+[node name="estudiantes2-11-D2" parent="." unique_id=1252010082 instance=ExtResource("16_7agvf")]
+position = Vector2(906, 611)
+
+[node name="estudiantes2-11-D3" parent="." unique_id=22815198 instance=ExtResource("16_7agvf")]
+position = Vector2(433, 404)
 
 [editable path="Casillero interactivo"]

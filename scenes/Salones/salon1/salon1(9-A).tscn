@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="13_i1gmo"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_guw3q"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="15_t8beu"]
+[ext_resource type="PackedScene" uid="uid://xyx2julijp7n" path="res://scenes/Personajes/estudiantes_2(9_a).tscn" id="16_c26bk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_scmh2")
@@ -782,3 +783,21 @@ position = Vector2(856, 368)
 
 [node name="Estudiantes4" parent="." unique_id=2072374039 instance=ExtResource("15_t8beu")]
 position = Vector2(1109, 598)
+
+[node name="estudiantes2(9-A)" parent="." unique_id=1383629540 instance=ExtResource("16_c26bk")]
+position = Vector2(300, 622)
+
+[node name="estudiantes2(9-A)2" parent="." unique_id=307187364 instance=ExtResource("16_c26bk")]
+position = Vector2(1073, 547)
+
+[node name="estudiantes2(9-A)3" parent="." unique_id=766307470 instance=ExtResource("16_c26bk")]
+position = Vector2(141, 388)
+
+[node name="estudiantes2(9-A)4" parent="." unique_id=939273701 instance=ExtResource("16_c26bk")]
+position = Vector2(598, 441)
+
+[node name="estudiantes2(9-A)5" parent="." unique_id=2000551030 instance=ExtResource("16_c26bk")]
+position = Vector2(456, 490)
+
+[node name="estudiantes2(9-A)6" parent="." unique_id=1088944772 instance=ExtResource("16_c26bk")]
+position = Vector2(879, 392)

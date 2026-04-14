@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_tsegc"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_bpgl5"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_vdxde"]
+[ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_h1wjo"]
+[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="17_xftoy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_s3d88")
@@ -741,7 +743,7 @@ shape = SubResource("RectangleShape2D_sww78")
 [node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("9_kys7u")]
 
 [node name="Casillero interactivo" parent="." unique_id=463665517 instance=ExtResource("10_35ttv")]
-position = Vector2(-554, -16)
+position = Vector2(566, 204)
 
 [node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("11_3jbf8")]
 position = Vector2(167, 530)
@@ -788,5 +790,26 @@ position = Vector2(260, 373)
 
 [node name="CharacterBody2D4" parent="." unique_id=1990671930 instance=ExtResource("15_vdxde")]
 position = Vector2(1103, 447)
+
+[node name="estudiantes2-11-D" parent="." unique_id=2114698328 instance=ExtResource("16_h1wjo")]
+position = Vector2(70, 613)
+
+[node name="estudiantes2-11-D2" parent="." unique_id=1461035851 instance=ExtResource("16_h1wjo")]
+position = Vector2(326, 600)
+
+[node name="estudiantes2-11-D3" parent="." unique_id=1820667785 instance=ExtResource("16_h1wjo")]
+position = Vector2(607, 479)
+
+[node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("17_xftoy")]
+position = Vector2(605, 535)
+
+[node name="Estudiantes11-D2" parent="." unique_id=1566847797 instance=ExtResource("17_xftoy")]
+position = Vector2(219, 390)
+
+[node name="Estudiantes11-D3" parent="." unique_id=1885491796 instance=ExtResource("17_xftoy")]
+position = Vector2(918, 586)
+
+[node name="Estudiantes11-D4" parent="." unique_id=1318436096 instance=ExtResource("17_xftoy")]
+position = Vector2(884, 369)
 
 [editable path="MesaProfesor"]
