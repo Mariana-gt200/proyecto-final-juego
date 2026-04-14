@@ -1,22 +1,23 @@
 [gd_scene format=4 uid="uid://daynur12fbyml"]
 
-[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_5pbk8"]
-[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_7igra"]
-[ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_lfep3"]
-[ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_rwdpd"]
-[ext_resource type="Texture2D" uid="uid://d0610uekekqs6" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_3eibv"]
-[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_8iaoo"]
-[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_vo7sv"]
-[ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="9_68p30"]
-[ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="10_c4tim"]
-[ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_cv8ev"]
-[ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="11_yqxa8"]
-[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_r7kci"]
-[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_f74qe"]
-[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_p6ck2"]
+[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_s3d88"]
+[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_vdxde"]
+[ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_2pvua"]
+[ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_h1wjo"]
+[ext_resource type="Texture2D" uid="uid://cbryfovttjhrv" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_xftoy"]
+[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="6_xw2s8"]
+[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="7_in4ak"]
+[ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="8_8ogvq"]
+[ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="9_kys7u"]
+[ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="10_35ttv"]
+[ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="11_3jbf8"]
+[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_ao20x"]
+[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_tsegc"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_bpgl5"]
+[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_vdxde"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
-texture = ExtResource("1_5pbk8")
+texture = ExtResource("1_s3d88")
 43:11/0 = 0
 43:10/0 = 0
 43:9/0 = 0
@@ -587,72 +588,72 @@ shape = SubResource("RectangleShape2D_yqxa8")
 position = Vector2(1099.25, 758.25)
 shape = SubResource("RectangleShape2D_f74qe")
 
-[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_7igra")]
+[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_vdxde")]
 y_sort_enabled = true
 position = Vector2(1009, 225)
 
-[node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_lfep3")]
+[node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_2pvua")]
 position = Vector2(381, 525)
 
-[node name="Mesa2" parent="." unique_id=1160271712 instance=ExtResource("3_lfep3")]
+[node name="Mesa2" parent="." unique_id=1160271712 instance=ExtResource("3_2pvua")]
 position = Vector2(381, 479)
 
-[node name="Mesa3" parent="." unique_id=2112581024 instance=ExtResource("3_lfep3")]
+[node name="Mesa3" parent="." unique_id=2112581024 instance=ExtResource("3_2pvua")]
 position = Vector2(418, 398)
 
-[node name="Mesa4" parent="." unique_id=153677074 instance=ExtResource("3_lfep3")]
+[node name="Mesa4" parent="." unique_id=153677074 instance=ExtResource("3_2pvua")]
 position = Vector2(560, 484)
 
-[node name="Mesa5" parent="." unique_id=1167188202 instance=ExtResource("3_lfep3")]
+[node name="Mesa5" parent="." unique_id=1167188202 instance=ExtResource("3_2pvua")]
 position = Vector2(553, 404)
 
-[node name="Mesa6" parent="." unique_id=1954494544 instance=ExtResource("3_lfep3")]
+[node name="Mesa6" parent="." unique_id=1954494544 instance=ExtResource("3_2pvua")]
 position = Vector2(284, 385)
 
-[node name="Mesa7" parent="." unique_id=1435650161 instance=ExtResource("3_lfep3")]
+[node name="Mesa7" parent="." unique_id=1435650161 instance=ExtResource("3_2pvua")]
 position = Vector2(560, 581)
 
-[node name="Mesa8" parent="." unique_id=1163531020 instance=ExtResource("3_lfep3")]
+[node name="Mesa8" parent="." unique_id=1163531020 instance=ExtResource("3_2pvua")]
 position = Vector2(562, 359)
 
-[node name="Mesa9" parent="." unique_id=2076291904 instance=ExtResource("3_lfep3")]
+[node name="Mesa9" parent="." unique_id=2076291904 instance=ExtResource("3_2pvua")]
 position = Vector2(161, 596)
 rotation = 1.5707964
 
-[node name="Mesa10" parent="." unique_id=1676132341 instance=ExtResource("3_lfep3")]
+[node name="Mesa10" parent="." unique_id=1676132341 instance=ExtResource("3_2pvua")]
 position = Vector2(754, 369)
 
-[node name="Mesa11" parent="." unique_id=1692152961 instance=ExtResource("3_lfep3")]
+[node name="Mesa11" parent="." unique_id=1692152961 instance=ExtResource("3_2pvua")]
 position = Vector2(705, 490)
 
-[node name="Mesa12" parent="." unique_id=855389915 instance=ExtResource("3_lfep3")]
+[node name="Mesa12" parent="." unique_id=855389915 instance=ExtResource("3_2pvua")]
 position = Vector2(706, 573)
 
-[node name="Mesa13" parent="." unique_id=1223941409 instance=ExtResource("3_lfep3")]
+[node name="Mesa13" parent="." unique_id=1223941409 instance=ExtResource("3_2pvua")]
 position = Vector2(828, 395)
 
-[node name="Mesa14" parent="." unique_id=286600157 instance=ExtResource("3_lfep3")]
+[node name="Mesa14" parent="." unique_id=286600157 instance=ExtResource("3_2pvua")]
 position = Vector2(832, 483)
 
-[node name="Mesa15" parent="." unique_id=1642059793 instance=ExtResource("3_lfep3")]
+[node name="Mesa15" parent="." unique_id=1642059793 instance=ExtResource("3_2pvua")]
 position = Vector2(840, 578)
 
-[node name="Estanteria" parent="." unique_id=1842337419 instance=ExtResource("4_rwdpd")]
+[node name="Estanteria" parent="." unique_id=1842337419 instance=ExtResource("4_h1wjo")]
 position = Vector2(782, 172)
 
-[node name="Mesa16" parent="." unique_id=1563241276 instance=ExtResource("3_lfep3")]
+[node name="Mesa16" parent="." unique_id=1563241276 instance=ExtResource("3_2pvua")]
 position = Vector2(848, 349)
 
-[node name="Mesa17" parent="." unique_id=1188769030 instance=ExtResource("3_lfep3")]
+[node name="Mesa17" parent="." unique_id=1188769030 instance=ExtResource("3_2pvua")]
 position = Vector2(457, 592)
 
-[node name="Mesa18" parent="." unique_id=51941947 instance=ExtResource("3_lfep3")]
+[node name="Mesa18" parent="." unique_id=51941947 instance=ExtResource("3_2pvua")]
 position = Vector2(964, 396)
 
-[node name="Mesa19" parent="." unique_id=1860981812 instance=ExtResource("3_lfep3")]
+[node name="Mesa19" parent="." unique_id=1860981812 instance=ExtResource("3_2pvua")]
 position = Vector2(264, 597)
 
-[node name="Mesa20" parent="." unique_id=527062574 instance=ExtResource("3_lfep3")]
+[node name="Mesa20" parent="." unique_id=527062574 instance=ExtResource("3_2pvua")]
 position = Vector2(267, 551)
 
 [node name="Televisor" type="StaticBody2D" parent="." unique_id=1885242384]
@@ -661,7 +662,7 @@ y_sort_enabled = true
 [node name="Sprite2D" type="Sprite2D" parent="Televisor" unique_id=1214514625]
 position = Vector2(146, 290.99997)
 scale = Vector2(0.47468355, 0.3923767)
-texture = ExtResource("5_3eibv")
+texture = ExtResource("5_xftoy")
 offset = Vector2(0, -280)
 region_enabled = true
 region_rect = Rect2(432.10437, 734.0276, 158.75214, 223.60822)
@@ -677,7 +678,7 @@ y_sort_enabled = true
 y_sort_enabled = true
 position = Vector2(146.99998, 270)
 scale = Vector2(0.5516975, 0.29026452)
-texture = ExtResource("5_3eibv")
+texture = ExtResource("5_xftoy")
 offset = Vector2(0, -100)
 region_enabled = true
 region_rect = Rect2(774.0003, 550.4546, 162.31555, 416.78308)
@@ -691,7 +692,7 @@ shape = SubResource("RectangleShape2D_1hwcl")
 [node name="Sprite2D" type="Sprite2D" parent="Tablero" unique_id=807502590]
 position = Vector2(279.00003, 196)
 scale = Vector2(0.83157897, 0.93421054)
-texture = ExtResource("7_8iaoo")
+texture = ExtResource("6_xw2s8")
 offset = Vector2(0, -120)
 region_enabled = true
 region_rect = Rect2(30.733536, 663.93225, 570.585, 152.07312)
@@ -706,7 +707,7 @@ y_sort_enabled = true
 [node name="Sprite2D" type="Sprite2D" parent="Cartuchera" unique_id=84550989]
 position = Vector2(279, 405)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("8_vo7sv")
+texture = ExtResource("7_in4ak")
 offset = Vector2(0, -300)
 region_enabled = true
 region_rect = Rect2(379.76965, 472.08154, 218.25653, 174.60522)
@@ -715,10 +716,10 @@ region_rect = Rect2(379.76965, 472.08154, 218.25653, 174.60522)
 position = Vector2(563, 417.625)
 shape = SubResource("RectangleShape2D_pqsxr")
 
-[node name="Cartuchera2" parent="." unique_id=983400329 instance=ExtResource("9_68p30")]
+[node name="Cartuchera2" parent="." unique_id=983400329 instance=ExtResource("8_8ogvq")]
 position = Vector2(264, 571)
 
-[node name="Cartuchera3" parent="." unique_id=1848114852 instance=ExtResource("9_68p30")]
+[node name="Cartuchera3" parent="." unique_id=1848114852 instance=ExtResource("8_8ogvq")]
 position = Vector2(709, 596)
 
 [node name="Lapices" type="StaticBody2D" parent="." unique_id=1614223336]
@@ -728,7 +729,7 @@ y_sort_enabled = true
 position = Vector2(589, 487)
 rotation = -0.64751714
 scale = Vector2(0.3, 0.27041388)
-texture = ExtResource("8_vo7sv")
+texture = ExtResource("7_in4ak")
 offset = Vector2(0, -200)
 region_enabled = true
 region_rect = Rect2(305.41635, 858.32153, 118.09613, 79.3761)
@@ -737,12 +738,12 @@ region_rect = Rect2(305.41635, 858.32153, 118.09613, 79.3761)
 position = Vector2(563, 505)
 shape = SubResource("RectangleShape2D_sww78")
 
-[node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("10_c4tim")]
+[node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("9_kys7u")]
 
-[node name="Casillero interactivo" parent="." unique_id=463665517 instance=ExtResource("11_cv8ev")]
+[node name="Casillero interactivo" parent="." unique_id=463665517 instance=ExtResource("10_35ttv")]
 position = Vector2(-554, -16)
 
-[node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("11_yqxa8")]
+[node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("11_3jbf8")]
 position = Vector2(167, 530)
 
 [node name="Sprite2D" parent="MesaProfesor" index="0" unique_id=1326520575]
@@ -753,11 +754,11 @@ flip_h = true
 position = Vector2(887, 13.9999695)
 rotation = 1.1397
 
-[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_r7kci")]
+[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_ao20x")]
 position = Vector2(1015, 116)
 escena_destino = "uid://suhivdjgfra1"
 
-[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("13_f74qe")]
+[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("13_tsegc")]
 position = Vector2(628, 224.99998)
 rotation = -0.0076498166
 scale = Vector2(0.5, 0.5)
@@ -773,7 +774,19 @@ Carlos ha estado comportándose de manera indebida ante sus maestros y compañer
 Nota confidencial: Se han detectado moretones en los antebrazos que el alumno justifica como 'accidentes domésticos'. Existe una correlación directa entre sus bajas notas en matemáticas y su nivel de ansiedad. Sospecho una dinámica familiar punitiva y violenta ante el fracaso escolar. El alumno se niega a profundizar. 
 Sugerencia: Entrevistar a compañeros cercanos para verificar su entorno fuera del aula."
 
-[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_p6ck2")]
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_bpgl5")]
 position = Vector2(681, 173)
+
+[node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("15_vdxde")]
+position = Vector2(379, 592)
+
+[node name="CharacterBody2D2" parent="." unique_id=2081167102 instance=ExtResource("15_vdxde")]
+position = Vector2(1050, 464)
+
+[node name="CharacterBody2D3" parent="." unique_id=1720663516 instance=ExtResource("15_vdxde")]
+position = Vector2(260, 373)
+
+[node name="CharacterBody2D4" parent="." unique_id=1990671930 instance=ExtResource("15_vdxde")]
+position = Vector2(1103, 447)
 
 [editable path="MesaProfesor"]

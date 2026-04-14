@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://iwuwofda1u6r"]
+
+[ext_resource type="Texture2D" uid="uid://c83we37fp3aud" path="res://texturas/Personajes/16x32/16x32 Walk-Sheet.png" id="1_d8v4g"]
+[ext_resource type="Texture2D" uid="uid://b38q3c6flylja" path="res://texturas/Personajes/MetroCity 2.0/Hair.png" id="2_24y5k"]
+[ext_resource type="Texture2D" uid="uid://cvsk573v0j8w7" path="res://texturas/Personajes/MetroCity 2.0/Suit1.png" id="3_2jk28"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wqwo6"]
+radius = 4.0
+height = 46.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=618374476]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1820357374]
+scale = Vector2(4, 4)
+texture = ExtResource("1_d8v4g")
+offset = Vector2(0, -16)
+hframes = 4
+vframes = 5
+
+[node name="Hair" type="Sprite2D" parent="." unique_id=2043768323]
+position = Vector2(-1, -83)
+scale = Vector2(3.5789473, 3.3157892)
+texture = ExtResource("2_24y5k")
+region_enabled = true
+region_rect = Rect2(6.104107, 64.80005, 19.347267, 19.56842)
+
+[node name="Suit1" type="Sprite2D" parent="." unique_id=557456140]
+position = Vector2(0, -35)
+scale = Vector2(4, 4)
+texture = ExtResource("3_2jk28")
+region_enabled = true
+region_rect = Rect2(6.4042625, 14.786476, 19.066874, 17.664898)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=131892756]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_wqwo6")

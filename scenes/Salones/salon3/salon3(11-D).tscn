@@ -1,21 +1,23 @@
 [gd_scene format=4 uid="uid://dnr8u7somo4o2"]
 
-[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_saxt8"]
-[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_unwje"]
-[ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_mt1lj"]
-[ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_ol5sv"]
-[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="7_jcap6"]
-[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="8_jxmmc"]
-[ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="9_nvdc2"]
-[ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="10_p6ryo"]
-[ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="10_xsekw"]
-[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="11_6bk6s"]
-[ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="11_rdcbr"]
-[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="12_878pw"]
-[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_iikrj"]
+[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_6rdng"]
+[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_o6ntc"]
+[ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_51nep"]
+[ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_7agvf"]
+[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="5_dl2fq"]
+[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="6_dli6g"]
+[ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="7_6cwwn"]
+[ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="8_ued5s"]
+[ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="9_aby4c"]
+[ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="10_2yfc6"]
+[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="11_61tsi"]
+[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="12_7b236"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_vm2yk"]
+[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="14_o6ntc"]
+[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_51nep"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
-texture = ExtResource("1_saxt8")
+texture = ExtResource("1_6rdng")
 43:11/0 = 0
 43:10/0 = 0
 43:9/0 = 0
@@ -441,71 +443,71 @@ shape = SubResource("RectangleShape2D_878pw")
 position = Vector2(1113, 714)
 shape = SubResource("RectangleShape2D_878pw")
 
-[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_unwje")]
+[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_o6ntc")]
 y_sort_enabled = true
 position = Vector2(1009, 221)
 
-[node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_mt1lj")]
+[node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_51nep")]
 position = Vector2(175, 471)
 
-[node name="Mesa2" parent="." unique_id=1160271712 instance=ExtResource("3_mt1lj")]
+[node name="Mesa2" parent="." unique_id=1160271712 instance=ExtResource("3_51nep")]
 position = Vector2(174, 521)
 
-[node name="Mesa3" parent="." unique_id=2112581024 instance=ExtResource("3_mt1lj")]
+[node name="Mesa3" parent="." unique_id=2112581024 instance=ExtResource("3_51nep")]
 position = Vector2(173, 362)
 
-[node name="Mesa4" parent="." unique_id=153677074 instance=ExtResource("3_mt1lj")]
+[node name="Mesa4" parent="." unique_id=153677074 instance=ExtResource("3_51nep")]
 position = Vector2(323, 535)
 
-[node name="Mesa5" parent="." unique_id=1167188202 instance=ExtResource("3_mt1lj")]
+[node name="Mesa5" parent="." unique_id=1167188202 instance=ExtResource("3_51nep")]
 position = Vector2(344, 379)
 
-[node name="Mesa6" parent="." unique_id=1954494544 instance=ExtResource("3_mt1lj")]
+[node name="Mesa6" parent="." unique_id=1954494544 instance=ExtResource("3_51nep")]
 position = Vector2(174, 313)
 
-[node name="Mesa7" parent="." unique_id=1435650161 instance=ExtResource("3_mt1lj")]
+[node name="Mesa7" parent="." unique_id=1435650161 instance=ExtResource("3_51nep")]
 position = Vector2(323, 588)
 
-[node name="Mesa8" parent="." unique_id=1163531020 instance=ExtResource("3_mt1lj")]
+[node name="Mesa8" parent="." unique_id=1163531020 instance=ExtResource("3_51nep")]
 position = Vector2(527, 557)
 
-[node name="Mesa9" parent="." unique_id=2076291904 instance=ExtResource("3_mt1lj")]
+[node name="Mesa9" parent="." unique_id=2076291904 instance=ExtResource("3_51nep")]
 position = Vector2(346, 333)
 
-[node name="Mesa10" parent="." unique_id=1676132341 instance=ExtResource("3_mt1lj")]
+[node name="Mesa10" parent="." unique_id=1676132341 instance=ExtResource("3_51nep")]
 position = Vector2(529, 609)
 
-[node name="Mesa11" parent="." unique_id=1692152961 instance=ExtResource("3_mt1lj")]
+[node name="Mesa11" parent="." unique_id=1692152961 instance=ExtResource("3_51nep")]
 position = Vector2(412, 436)
 
-[node name="Mesa12" parent="." unique_id=855389915 instance=ExtResource("3_mt1lj")]
+[node name="Mesa12" parent="." unique_id=855389915 instance=ExtResource("3_51nep")]
 position = Vector2(417, 491)
 
-[node name="Mesa13" parent="." unique_id=1223941409 instance=ExtResource("3_mt1lj")]
+[node name="Mesa13" parent="." unique_id=1223941409 instance=ExtResource("3_51nep")]
 position = Vector2(545, 344)
 
-[node name="Mesa14" parent="." unique_id=286600157 instance=ExtResource("3_mt1lj")]
+[node name="Mesa14" parent="." unique_id=286600157 instance=ExtResource("3_51nep")]
 position = Vector2(683, 408)
 
-[node name="Mesa15" parent="." unique_id=1642059793 instance=ExtResource("3_mt1lj")]
+[node name="Mesa15" parent="." unique_id=1642059793 instance=ExtResource("3_51nep")]
 position = Vector2(681, 472)
 
-[node name="Estanteria" parent="." unique_id=1842337419 instance=ExtResource("4_ol5sv")]
+[node name="Estanteria" parent="." unique_id=1842337419 instance=ExtResource("4_7agvf")]
 position = Vector2(181, 183)
 
-[node name="Mesa16" parent="." unique_id=1563241276 instance=ExtResource("3_mt1lj")]
+[node name="Mesa16" parent="." unique_id=1563241276 instance=ExtResource("3_51nep")]
 position = Vector2(545, 392)
 
-[node name="Mesa17" parent="." unique_id=1188769030 instance=ExtResource("3_mt1lj")]
+[node name="Mesa17" parent="." unique_id=1188769030 instance=ExtResource("3_51nep")]
 position = Vector2(769, 357)
 
-[node name="Mesa18" parent="." unique_id=51941947 instance=ExtResource("3_mt1lj")]
+[node name="Mesa18" parent="." unique_id=51941947 instance=ExtResource("3_51nep")]
 position = Vector2(820, 618)
 
-[node name="Mesa19" parent="." unique_id=1860981812 instance=ExtResource("3_mt1lj")]
+[node name="Mesa19" parent="." unique_id=1860981812 instance=ExtResource("3_51nep")]
 position = Vector2(824, 567)
 
-[node name="Mesa20" parent="." unique_id=527062574 instance=ExtResource("3_mt1lj")]
+[node name="Mesa20" parent="." unique_id=527062574 instance=ExtResource("3_51nep")]
 position = Vector2(878, 477)
 
 [node name="Tablero" type="StaticBody2D" parent="." unique_id=1494333804]
@@ -513,7 +515,7 @@ position = Vector2(878, 477)
 [node name="Sprite2D" type="Sprite2D" parent="Tablero" unique_id=807502590]
 position = Vector2(685, 201)
 scale = Vector2(0.83157897, 0.93421054)
-texture = ExtResource("7_jcap6")
+texture = ExtResource("5_dl2fq")
 offset = Vector2(0, -120)
 region_enabled = true
 region_rect = Rect2(30.733536, 663.93225, 570.585, 152.07312)
@@ -528,7 +530,7 @@ y_sort_enabled = true
 [node name="Sprite2D" type="Sprite2D" parent="Cartuchera" unique_id=84550989]
 position = Vector2(167.00003, 381)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("8_jxmmc")
+texture = ExtResource("6_dli6g")
 offset = Vector2(0, -300)
 region_enabled = true
 region_rect = Rect2(379.76965, 472.08154, 218.25653, 174.60522)
@@ -537,10 +539,10 @@ region_rect = Rect2(379.76965, 472.08154, 218.25653, 174.60522)
 position = Vector2(174, 384)
 shape = SubResource("RectangleShape2D_pqsxr")
 
-[node name="Cartuchera2" parent="." unique_id=983400329 instance=ExtResource("9_nvdc2")]
+[node name="Cartuchera2" parent="." unique_id=983400329 instance=ExtResource("7_6cwwn")]
 position = Vector2(881, 498)
 
-[node name="Cartuchera3" parent="." unique_id=1848114852 instance=ExtResource("9_nvdc2")]
+[node name="Cartuchera3" parent="." unique_id=1848114852 instance=ExtResource("7_6cwwn")]
 position = Vector2(540, 363)
 
 [node name="Lapices" type="StaticBody2D" parent="." unique_id=1614223336]
@@ -550,7 +552,7 @@ y_sort_enabled = true
 position = Vector2(446.00003, 493.00003)
 rotation = -0.64751714
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("8_jxmmc")
+texture = ExtResource("6_dli6g")
 offset = Vector2(0, -200)
 region_enabled = true
 region_rect = Rect2(305.41635, 858.32153, 118.09613, 79.3761)
@@ -559,10 +561,10 @@ region_rect = Rect2(305.41635, 858.32153, 118.09613, 79.3761)
 position = Vector2(427, 502)
 shape = SubResource("RectangleShape2D_sww78")
 
-[node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("10_p6ryo")]
+[node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("8_ued5s")]
 position = Vector2(-141, 178)
 
-[node name="Casillero interactivo" parent="." unique_id=463665517 instance=ExtResource("11_rdcbr")]
+[node name="Casillero interactivo" parent="." unique_id=463665517 instance=ExtResource("9_aby4c")]
 position = Vector2(407, 203)
 
 [node name="Sprite2D" parent="Casillero interactivo" index="0" unique_id=751334593]
@@ -570,14 +572,14 @@ position = Vector2(3.8000002, -1.7038056)
 scale = Vector2(1.3391304, 1.3099236)
 flip_h = true
 
-[node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("10_xsekw")]
+[node name="MesaProfesor" parent="." unique_id=577915512 instance=ExtResource("10_2yfc6")]
 position = Vector2(1028, 407)
 
-[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("11_6bk6s")]
+[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("11_61tsi")]
 position = Vector2(1015, 114)
 escena_destino = "uid://suhivdjgfra1"
 
-[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("12_878pw")]
+[node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("12_7b236")]
 position = Vector2(1069, 469)
 nombre_alumno = "Erika"
 informacion = "Ficha Técnica:
@@ -594,7 +596,37 @@ Observaciones de campo: Se le ha visto refugiarse en los baños del segundo piso
 
 Nota confidencial: Los síntomas (fatiga extrema, aislamiento post-almuerzo y decaimiento anímico) sugieren un posible Trastorno de la Conducta Alimentaria (TCA) o un cuadro depresivo mayor. Existe una desconexión total con su entorno. Debo intervenir antes de que su integridad física corra peligro."
 
-[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("13_iikrj")]
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("13_vm2yk")]
 position = Vector2(1104, 298)
+
+[node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("14_o6ntc")]
+position = Vector2(108, 555)
+
+[node name="Estudiantes11-D2" parent="." unique_id=1328412463 instance=ExtResource("14_o6ntc")]
+position = Vector2(852, 593)
+
+[node name="Estudiantes11-D3" parent="." unique_id=785799070 instance=ExtResource("14_o6ntc")]
+position = Vector2(155, 291)
+
+[node name="Estudiantes11-D4" parent="." unique_id=682184417 instance=ExtResource("14_o6ntc")]
+position = Vector2(195, 347)
+
+[node name="Estudiantes11-D5" parent="." unique_id=1139186897 instance=ExtResource("14_o6ntc")]
+position = Vector2(719, 406)
+
+[node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("15_51nep")]
+position = Vector2(172, 559)
+
+[node name="CharacterBody2D2" parent="." unique_id=848434603 instance=ExtResource("15_51nep")]
+position = Vector2(140, 378)
+
+[node name="CharacterBody2D3" parent="." unique_id=1444682408 instance=ExtResource("15_51nep")]
+position = Vector2(387, 383)
+
+[node name="CharacterBody2D4" parent="." unique_id=227905983 instance=ExtResource("15_51nep")]
+position = Vector2(632, 457)
+
+[node name="CharacterBody2D5" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
+position = Vector2(566, 585)
 
 [editable path="Casillero interactivo"]

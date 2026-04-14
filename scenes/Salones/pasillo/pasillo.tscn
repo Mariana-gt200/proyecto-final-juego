@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="7_abtvi"]
 [ext_resource type="Texture2D" uid="uid://c7448mlyu4x0t" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="8_ixgo1"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
+[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
+[ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
+[ext_resource type="PackedScene" uid="uid://bogdp8irgw8k0" path="res://scenes/Personajes/director.tscn" id="12_cuxw4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_c7h13")
@@ -990,5 +993,23 @@ escena_destino = "uid://daynur12fbyml"
 [node name="puerta_teletransportadora3" parent="." unique_id=517571169 instance=ExtResource("9_amvy7")]
 position = Vector2(968, 292)
 escena_destino = "uid://dnr8u7somo4o2"
+
+[node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("10_t4toy")]
+position = Vector2(90, 398)
+
+[node name="CharacterBody2D2" parent="." unique_id=1528794121 instance=ExtResource("10_t4toy")]
+position = Vector2(1122, 433)
+
+[node name="Estudiantes" parent="." unique_id=1906568293 instance=ExtResource("11_cuxw4")]
+position = Vector2(1072, 442)
+
+[node name="Estudiantes2" parent="." unique_id=2002771794 instance=ExtResource("11_cuxw4")]
+position = Vector2(346, 405)
+
+[node name="Estudiantes3" parent="." unique_id=2053983824 instance=ExtResource("11_cuxw4")]
+position = Vector2(796, 402)
+
+[node name="director" parent="." unique_id=909311089 instance=ExtResource("12_cuxw4")]
+position = Vector2(881, 617)
 
 [editable path="Cartuchera2"]
