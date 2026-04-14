@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
 [ext_resource type="PackedScene" uid="uid://bogdp8irgw8k0" path="res://scenes/Personajes/director.tscn" id="12_cuxw4"]
+[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="13_cmlx3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_c7h13")
@@ -1011,5 +1012,20 @@ position = Vector2(796, 402)
 
 [node name="director" parent="." unique_id=909311089 instance=ExtResource("12_cuxw4")]
 position = Vector2(881, 617)
+
+[node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("13_cmlx3")]
+position = Vector2(294, 407)
+
+[node name="Estudiantes11-D2" parent="." unique_id=1847344295 instance=ExtResource("13_cmlx3")]
+position = Vector2(938, 627)
+
+[node name="Estudiantes11-D3" parent="." unique_id=2115398523 instance=ExtResource("13_cmlx3")]
+position = Vector2(163, 566)
+
+[node name="CharacterBody2D3" parent="." unique_id=755588015 instance=ExtResource("10_t4toy")]
+position = Vector2(230, 572)
+
+[node name="Estudiantes4" parent="." unique_id=1929643512 instance=ExtResource("11_cuxw4")]
+position = Vector2(190, 608)
 
 [editable path="Cartuchera2"]
