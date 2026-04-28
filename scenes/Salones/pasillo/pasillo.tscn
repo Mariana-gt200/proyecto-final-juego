@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://suhivdjgfra1"]
 
-[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_c7h13"]
+[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_c7h13"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_abtvi"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_ixgo1"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="4_amvy7"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="4_amvy7"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="5_ygoox"]
 [ext_resource type="PackedScene" uid="uid://ckaw7uw2bxwjh" path="res://scenes/Salones/casilleros.tscn" id="6_c7h13"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="7_abtvi"]
-[ext_resource type="Texture2D" uid="uid://c7448mlyu4x0t" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="8_ixgo1"]
+[ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="8_ixgo1"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
@@ -1011,7 +1011,7 @@ position = Vector2(346, 405)
 position = Vector2(796, 402)
 
 [node name="director" parent="." unique_id=909311089 instance=ExtResource("12_cuxw4")]
-position = Vector2(881, 617)
+position = Vector2(468, 622)
 
 [node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("13_cmlx3")]
 position = Vector2(294, 407)
