@@ -61,6 +61,9 @@ _data = {
 radius = 1.3349342
 height = 69.91718
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egq3c"]
+size = Vector2(112, 175)
+
 [node name="psicologa" type="CharacterBody2D" unique_id=1170587380]
 script = ExtResource("1_egq3c")
 
@@ -82,3 +85,13 @@ position = Vector2(5, 7)
 rotation = -1.5562404
 scale = Vector2(1.487136, 0.99982935)
 shape = SubResource("CapsuleShape2D_q2buh")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=719014952]
+position = Vector2(3, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=869153955]
+position = Vector2(3, -77.5)
+shape = SubResource("RectangleShape2D_egq3c")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
