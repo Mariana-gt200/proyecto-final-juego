@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://daynur12fbyml"]
 
-[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_s3d88"]
+[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_s3d88"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_vdxde"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_2pvua"]
 [ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_h1wjo"]
-[ext_resource type="Texture2D" uid="uid://cbryfovttjhrv" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_xftoy"]
-[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="6_xw2s8"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="7_in4ak"]
+[ext_resource type="Texture2D" uid="uid://d0610uekekqs6" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 3.png" id="5_xftoy"]
+[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="6_xw2s8"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="7_in4ak"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="8_8ogvq"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="9_kys7u"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="10_35ttv"]
@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_vdxde"]
 [ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_h1wjo"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="17_xftoy"]
+[ext_resource type="Script" uid="uid://chvk3mdjsonlp" path="res://scenes/Personajes/estudiantes_11_d.gd" id="18_8ogvq"]
+[ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="18_xw2s8"]
+[ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="20_in4ak"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_s3d88")
@@ -546,6 +549,15 @@ size = Vector2(63, 13.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
 size = Vector2(60, 10.25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_in4ak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ogvq"]
+size = Vector2(260.625, 176.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kys7u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35ttv"]
+
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
 
@@ -786,7 +798,7 @@ position = Vector2(379, 592)
 position = Vector2(1050, 464)
 
 [node name="CharacterBody2D3" parent="." unique_id=1720663516 instance=ExtResource("15_vdxde")]
-position = Vector2(260, 373)
+position = Vector2(330, 429)
 
 [node name="CharacterBody2D4" parent="." unique_id=1990671930 instance=ExtResource("15_vdxde")]
 position = Vector2(1103, 447)
@@ -804,12 +816,62 @@ position = Vector2(607, 479)
 position = Vector2(605, 535)
 
 [node name="Estudiantes11-D2" parent="." unique_id=1566847797 instance=ExtResource("17_xftoy")]
-position = Vector2(219, 390)
+position = Vector2(281, 441)
 
-[node name="Estudiantes11-D3" parent="." unique_id=1885491796 instance=ExtResource("17_xftoy")]
-position = Vector2(918, 586)
+[node name="carlos" parent="." unique_id=1885491796 instance=ExtResource("17_xftoy")]
+position = Vector2(51, 298)
+script = ExtResource("18_8ogvq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="carlos" unique_id=424644788]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="carlos" unique_id=463318410]
+shape = SubResource("RectangleShape2D_in4ak")
+
+[node name="Area2D" type="Area2D" parent="carlos" unique_id=1445277590]
+position = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="carlos/Area2D" unique_id=1702743188]
+position = Vector2(9.6875, -31.75)
+shape = SubResource("RectangleShape2D_8ogvq")
+
+[node name="CanvasDialogo" type="CanvasLayer" parent="carlos" unique_id=1734324669]
+script = ExtResource("18_xw2s8")
+
+[node name="Panel" type="Panel" parent="carlos/CanvasDialogo" unique_id=1698174696]
+visible = false
+offset_left = 414.0
+offset_top = 570.0
+offset_right = 672.0
+offset_bottom = 639.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kys7u")
+
+[node name="MarginContainer" type="MarginContainer" parent="carlos/CanvasDialogo/Panel" unique_id=1520922879]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="carlos/CanvasDialogo/Panel/MarginContainer" unique_id=1680641348]
+layout_mode = 2
 
 [node name="Estudiantes11-D4" parent="." unique_id=1318436096 instance=ExtResource("17_xftoy")]
 position = Vector2(884, 369)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=975643698]
+script = ExtResource("20_in4ak")
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1700000027]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_35ttv")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel" unique_id=691926476]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/MarginContainer" unique_id=1119831389]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 0)
 
 [editable path="MesaProfesor"]
