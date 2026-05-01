@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://dnr8u7somo4o2"]
 
-[ext_resource type="Texture2D" uid="uid://djbp7g8jq4ani" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_6rdng"]
+[ext_resource type="Texture2D" uid="uid://bndnbplemwfdw" path="res://texturas/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_6rdng"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_51nep"]
 [ext_resource type="PackedScene" uid="uid://dgyc8eijyals7" path="res://scenes/Salones/estanteria.tscn" id="4_7agvf"]
-[ext_resource type="Texture2D" uid="uid://cajfhn0oohpog" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="5_dl2fq"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="6_dli6g"]
+[ext_resource type="Texture2D" uid="uid://da2yq560jh8bu" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 1.png" id="5_dl2fq"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="6_dli6g"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="7_6cwwn"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="8_ued5s"]
 [ext_resource type="PackedScene" uid="uid://dbx4r4ppgx0r2" path="res://scenes/Salones/casillero_interactivo.tscn" id="9_aby4c"]
@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="14_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_51nep"]
 [ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_7agvf"]
+[ext_resource type="Script" uid="uid://fwxb8t4tyjvk" path="res://scenes/Personajes/estudiantes(10_f).gd" id="16_dli6g"]
+[ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="17_6cwwn"]
+[ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="17_dl2fq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_6rdng")
@@ -401,6 +404,15 @@ size = Vector2(63, 13.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
 size = Vector2(60, 10.25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dli6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6cwwn"]
+size = Vector2(260.625, 176.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dli6g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cwwn"]
+
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
 
@@ -425,7 +437,7 @@ position = Vector2(-26, 361)
 shape = SubResource("RectangleShape2D_sg84n")
 
 [node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=268124758]
-position = Vector2(493, 753)
+position = Vector2(493, 757)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=2061851109]
@@ -627,8 +639,40 @@ position = Vector2(387, 383)
 [node name="CharacterBody2D4" parent="." unique_id=227905983 instance=ExtResource("15_51nep")]
 position = Vector2(632, 457)
 
-[node name="CharacterBody2D5" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
-position = Vector2(566, 585)
+[node name="karen" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
+position = Vector2(526, 583)
+script = ExtResource("16_dli6g")
+
+[node name="Sprite2D2" type="Sprite2D" parent="karen" unique_id=417231746]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="karen" unique_id=1833926656]
+shape = SubResource("RectangleShape2D_dli6g")
+
+[node name="Area2D" type="Area2D" parent="karen" unique_id=2056086750]
+position = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="karen/Area2D" unique_id=1426452705]
+position = Vector2(9.6875, -31.75)
+shape = SubResource("RectangleShape2D_6cwwn")
+
+[node name="CanvasDialogo" type="CanvasLayer" parent="karen" unique_id=603590784]
+script = ExtResource("17_6cwwn")
+
+[node name="Panel" type="Panel" parent="karen/CanvasDialogo" unique_id=948311659]
+visible = false
+offset_left = 414.0
+offset_top = 570.0
+offset_right = 672.0
+offset_bottom = 639.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dli6g")
+
+[node name="MarginContainer" type="MarginContainer" parent="karen/CanvasDialogo/Panel" unique_id=1364869573]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="karen/CanvasDialogo/Panel/MarginContainer" unique_id=546368933]
+layout_mode = 2
 
 [node name="estudiantes2-11-D" parent="." unique_id=2114698328 instance=ExtResource("16_7agvf")]
 position = Vector2(134, 611)
@@ -638,5 +682,34 @@ position = Vector2(906, 611)
 
 [node name="estudiantes2-11-D3" parent="." unique_id=22815198 instance=ExtResource("16_7agvf")]
 position = Vector2(433, 404)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=185576454]
+script = ExtResource("17_dl2fq")
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=498001042]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6cwwn")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel" unique_id=2127348203]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/MarginContainer" unique_id=1684875658]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="." unique_id=1230900744]
+visible = false
+offset_left = 491.0
+offset_top = 423.0
+offset_right = 686.0
+offset_bottom = 464.0
+text = "I"
+
+[connection signal="body_entered" from="karen/Area2D" to="psicologa" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="karen/Area2D" to="psicologa" method="_on_area_2d_body_exited"]
 
 [editable path="Casillero interactivo"]
