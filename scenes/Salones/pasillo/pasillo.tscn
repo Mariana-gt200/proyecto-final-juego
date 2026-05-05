@@ -11,9 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
-[ext_resource type="PackedScene" uid="uid://bogdp8irgw8k0" path="res://scenes/Personajes/director.tscn" id="12_cuxw4"]
+[ext_resource type="PackedScene" uid="uid://cnvgdpdrcv3wm" path="res://scenes/Personajes/director.tscn" id="12_cuxw4"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="13_cmlx3"]
-[ext_resource type="Script" uid="uid://cu40rdlnt4kf2" path="res://scenes/canvas_layer.gd" id="14_64mgy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
 texture = ExtResource("1_c7h13")
@@ -1004,6 +1003,9 @@ position = Vector2(90, 398)
 [node name="CharacterBody2D2" parent="." unique_id=1528794121 instance=ExtResource("10_t4toy")]
 position = Vector2(1122, 433)
 
+[node name="Director" parent="." unique_id=613258770 instance=ExtResource("12_cuxw4")]
+position = Vector2(456, 602)
+
 [node name="Estudiantes" parent="." unique_id=1906568293 instance=ExtResource("11_cuxw4")]
 position = Vector2(1072, 442)
 
@@ -1012,9 +1014,6 @@ position = Vector2(346, 405)
 
 [node name="Estudiantes3" parent="." unique_id=2053983824 instance=ExtResource("11_cuxw4")]
 position = Vector2(796, 402)
-
-[node name="director" parent="." unique_id=909311089 instance=ExtResource("12_cuxw4")]
-position = Vector2(468, 622)
 
 [node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("13_cmlx3")]
 position = Vector2(294, 407)
@@ -1032,7 +1031,6 @@ position = Vector2(230, 572)
 position = Vector2(190, 608)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=848481553]
-script = ExtResource("14_64mgy")
 
 [node name="PanelContainer" type="Panel" parent="CanvasLayer" unique_id=1981397125]
 anchors_preset = -1

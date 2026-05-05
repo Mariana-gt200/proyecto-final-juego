@@ -1,19 +1,16 @@
-[gd_scene format=3 uid="uid://bogdp8irgw8k0"]
+[gd_scene format=3 uid="uid://cnvgdpdrcv3wm"]
 
 [ext_resource type="Texture2D" uid="uid://dves0wo7jwvaf" path="res://MemaoCharacterFantasySpritePack/007.png" id="1_ocxuv"]
-[ext_resource type="Script" uid="uid://cfjcadasgxnbc" path="res://scenes/Personajes/area_2d.gd" id="2_ys6nl"]
+[ext_resource type="Script" uid="uid://cybscug8biuno" path="res://scenes/Personajes/director.gd" id="1_ys6nl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocxuv"]
 radius = 38.69758
-height = 98.07987
+height = 135.9871
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ys6nl"]
-radius = 40.0
-height = 164.0
+[node name="Director" type="Area2D" unique_id=613258770]
+script = ExtResource("1_ys6nl")
 
-[node name="director" type="CharacterBody2D" unique_id=909311089]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=28931002]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=67679650]
 position = Vector2(0, 1.0999908)
 scale = Vector2(4, 3.7555556)
 texture = ExtResource("1_ocxuv")
@@ -21,19 +18,12 @@ offset = Vector2(0, -18)
 hframes = 8
 vframes = 21
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1878656387]
-position = Vector2(0, -35)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65305819]
+position = Vector2(0, -59)
 rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_ocxuv")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=20494436]
-script = ExtResource("2_ys6nl")
+[node name="ExclamationMark" type="Sprite2D" parent="." unique_id=54491989]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1311911267]
-y_sort_enabled = true
-position = Vector2(-1, -67)
-shape = SubResource("CapsuleShape2D_ys6nl")
-debug_color = Color(0.19892812, 0.63923055, 0.15381137, 0.41960785)
-
-[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
-[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
