@@ -4,22 +4,22 @@
 [ext_resource type="Script" uid="uid://cybscug8biuno" path="res://scenes/Personajes/director.gd" id="1_ys6nl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocxuv"]
-radius = 38.69758
-height = 135.9871
+radius = 83.01929
+height = 236.48387
 
 [node name="Director" type="Area2D" unique_id=613258770]
 script = ExtResource("1_ys6nl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=67679650]
-position = Vector2(0, 1.0999908)
-scale = Vector2(4, 3.7555556)
+position = Vector2(-1.4999971, -6.700015)
+scale = Vector2(4.6875, 4.6)
 texture = ExtResource("1_ocxuv")
 offset = Vector2(0, -18)
 hframes = 8
 vframes = 21
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65305819]
-position = Vector2(0, -59)
+position = Vector2(-2, -86)
 rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_ocxuv")
 

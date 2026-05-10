@@ -11,10 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
-[ext_resource type="PackedScene" uid="uid://cnvgdpdrcv3wm" path="res://scenes/Personajes/director.tscn" id="12_cuxw4"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="13_cmlx3"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmlx3"]
 texture = ExtResource("1_c7h13")
 43:11/0 = 0
 43:10/0 = 0
@@ -832,7 +831,7 @@ texture = ExtResource("1_c7h13")
 33:47/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_1feyj"]
-sources/0 = SubResource("TileSetAtlasSource_kc6b5")
+sources/0 = SubResource("TileSetAtlasSource_cmlx3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
 size = Vector2(136.375, 370)
@@ -916,7 +915,7 @@ shape = SubResource("RectangleShape2D_64mgy")
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_abtvi")]
 y_sort_enabled = true
-position = Vector2(600, 528)
+position = Vector2(603, 617)
 
 [node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_ixgo1")]
 position = Vector2(1030, 596)
@@ -986,15 +985,15 @@ position = Vector2(549, 106)
 shape = SubResource("CircleShape2D_amvy7")
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("9_amvy7")]
-position = Vector2(168, 292)
+position = Vector2(154, 267)
 escena_destino = "uid://x34jceuhntuc"
 
 [node name="puerta_teletransportadora2" parent="." unique_id=1202066731 instance=ExtResource("9_amvy7")]
-position = Vector2(554, 292)
+position = Vector2(538, 272)
 escena_destino = "uid://daynur12fbyml"
 
 [node name="puerta_teletransportadora3" parent="." unique_id=517571169 instance=ExtResource("9_amvy7")]
-position = Vector2(968, 292)
+position = Vector2(952, 265)
 escena_destino = "uid://dnr8u7somo4o2"
 
 [node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("10_t4toy")]
@@ -1002,9 +1001,6 @@ position = Vector2(90, 398)
 
 [node name="CharacterBody2D2" parent="." unique_id=1528794121 instance=ExtResource("10_t4toy")]
 position = Vector2(1122, 433)
-
-[node name="Director" parent="." unique_id=613258770 instance=ExtResource("12_cuxw4")]
-position = Vector2(456, 602)
 
 [node name="Estudiantes" parent="." unique_id=1906568293 instance=ExtResource("11_cuxw4")]
 position = Vector2(1072, 442)

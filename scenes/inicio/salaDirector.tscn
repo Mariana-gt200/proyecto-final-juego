@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://7j2d3esqsovf"]
+
+[ext_resource type="PackedScene" uid="uid://cnvgdpdrcv3wm" path="res://scenes/Personajes/director.tscn" id="2_eik1m"]
+[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="2_nmi0j"]
+[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="3_nmi0j"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="4_eik1m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nmi0j"]
+load_path = "res://.godot/imported/ChatGPT Image 10 may 2026, 04_08_35 p.m..png-42bd9e34cb4676b70fe22a299d72b11b.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fanoc"]
+size = Vector2(223.5625, 365)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbcvr"]
+size = Vector2(61, 712)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lv77"]
+size = Vector2(1179, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgcfj"]
+size = Vector2(354, 344)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54u70"]
+size = Vector2(188.75, 277.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmyxe"]
+size = Vector2(1117, 139)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmi0j"]
+size = Vector2(744, 265)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eik1m"]
+size = Vector2(119, 267)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nmi0j"]
+radius = 42.0
+height = 170.0
+
+[node name="SalaDirector" type="Node2D" unique_id=1383259806]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1210222222]
+offset_left = -29.0
+offset_top = -48.0
+offset_right = 1195.0
+offset_bottom = 686.0
+texture = SubResource("CompressedTexture2D_nmi0j")
+expand_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1902574226]
+position = Vector2(575, 313)
+
+[node name="LimitesSalon" type="StaticBody2D" parent="." unique_id=964041931]
+y_sort_enabled = true
+
+[node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=1189688270]
+position = Vector2(106, 193)
+shape = SubResource("RectangleShape2D_fanoc")
+
+[node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=1724991429]
+position = Vector2(-26, 361)
+shape = SubResource("RectangleShape2D_tbcvr")
+
+[node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=1484856591]
+position = Vector2(73, 826)
+shape = SubResource("RectangleShape2D_fanoc")
+
+[node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=2027120454]
+position = Vector2(1183, 326)
+shape = SubResource("RectangleShape2D_tbcvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimitesSalon" unique_id=1919232190]
+position = Vector2(579.5, 47.5)
+shape = SubResource("RectangleShape2D_7lv77")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LimitesSalon" unique_id=1885162444]
+position = Vector2(461, 271)
+shape = SubResource("RectangleShape2D_mgcfj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="LimitesSalon" unique_id=277303677]
+position = Vector2(830.375, 233.75)
+shape = SubResource("RectangleShape2D_54u70")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="LimitesSalon" unique_id=569089660]
+position = Vector2(699.5, 710.5)
+shape = SubResource("RectangleShape2D_lmyxe")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LimitesSalon" unique_id=7671091]
+position = Vector2(586, 199)
+shape = SubResource("RectangleShape2D_nmi0j")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="LimitesSalon" unique_id=2082479716]
+position = Vector2(1162, 247.5)
+shape = SubResource("RectangleShape2D_eik1m")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="LimitesSalon" unique_id=1928877167]
+position = Vector2(206, 471)
+shape = SubResource("CapsuleShape2D_nmi0j")
+
+[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("2_nmi0j")]
+position = Vector2(1018, 259)
+escena_destino = "uid://suhivdjgfra1"
+
+[node name="Director" parent="." unique_id=613258770 instance=ExtResource("2_eik1m")]
+position = Vector2(209, 551)
+
+[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("3_nmi0j")]
+y_sort_enabled = true
+position = Vector2(834, 603)
+
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("4_eik1m")]
+position = Vector2(266, 513)
