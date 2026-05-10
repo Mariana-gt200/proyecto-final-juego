@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
+[ext_resource type="FontFile" uid="uid://dapneyf45mgfe" path="res://fuentes/Symtext.ttf" id="13_64mgy"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="13_cmlx3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmlx3"]
@@ -860,8 +861,6 @@ size = Vector2(63, 13.25)
 [sub_resource type="CircleShape2D" id="CircleShape2D_amvy7"]
 radius = 65.62012
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ubag5"]
-
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
 
@@ -915,10 +914,10 @@ shape = SubResource("RectangleShape2D_64mgy")
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_abtvi")]
 y_sort_enabled = true
-position = Vector2(603, 617)
+position = Vector2(890, 625)
 
 [node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_ixgo1")]
-position = Vector2(1030, 596)
+position = Vector2(868, 514)
 
 [node name="Mesa2" parent="." unique_id=1160271712 instance=ExtResource("3_ixgo1")]
 position = Vector2(69, 412)
@@ -975,26 +974,59 @@ position = Vector2(349, 383)
 [node name="Reloj" type="StaticBody2D" parent="." unique_id=344899559]
 
 [node name="Sprite2D" type="Sprite2D" parent="Reloj" unique_id=2115228147]
-position = Vector2(552, 103)
+position = Vector2(552, 87)
 texture = ExtResource("8_ixgo1")
 region_enabled = true
 region_rect = Rect2(858.0555, 388.54327, 132.35474, 117.12808)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Reloj" unique_id=2111717271]
-position = Vector2(549, 106)
+position = Vector2(552, 84)
 shape = SubResource("CircleShape2D_amvy7")
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("9_amvy7")]
 position = Vector2(154, 267)
 escena_destino = "uid://x34jceuhntuc"
 
+[node name="Label" type="Label" parent="puerta_teletransportadora" unique_id=1952140794]
+offset_left = -19.0
+offset_top = -45.0
+offset_right = 54.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_64mgy")
+theme_override_font_sizes/font_size = 31
+text = "9-A"
+
 [node name="puerta_teletransportadora2" parent="." unique_id=1202066731 instance=ExtResource("9_amvy7")]
 position = Vector2(538, 272)
 escena_destino = "uid://daynur12fbyml"
 
+[node name="Label2" type="Label" parent="puerta_teletransportadora2" unique_id=795100613]
+offset_left = -22.0
+offset_top = -48.0
+offset_right = 60.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_64mgy")
+theme_override_font_sizes/font_size = 28
+text = "10-F"
+
 [node name="puerta_teletransportadora3" parent="." unique_id=517571169 instance=ExtResource("9_amvy7")]
 position = Vector2(952, 265)
 escena_destino = "uid://dnr8u7somo4o2"
+
+[node name="Label3" type="Label" parent="puerta_teletransportadora3" unique_id=1137823885]
+offset_left = -20.0
+offset_top = -45.0
+offset_right = 56.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_64mgy")
+theme_override_font_sizes/font_size = 30
+text = "11-D"
+
+[node name="puerta_teletransportadora4" parent="." unique_id=2095765462 instance=ExtResource("9_amvy7")]
+position = Vector2(1047, 640)
 
 [node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("10_t4toy")]
 position = Vector2(90, 398)
@@ -1015,7 +1047,7 @@ position = Vector2(796, 402)
 position = Vector2(294, 407)
 
 [node name="Estudiantes11-D2" parent="." unique_id=1847344295 instance=ExtResource("13_cmlx3")]
-position = Vector2(938, 627)
+position = Vector2(797, 527)
 
 [node name="Estudiantes11-D3" parent="." unique_id=2115398523 instance=ExtResource("13_cmlx3")]
 position = Vector2(163, 566)
@@ -1027,29 +1059,5 @@ position = Vector2(230, 572)
 position = Vector2(190, 608)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=848481553]
-
-[node name="PanelContainer" type="Panel" parent="CanvasLayer" unique_id=1981397125]
-anchors_preset = -1
-anchor_right = 0.024
-anchor_bottom = 0.022000002
-offset_left = 122.0
-offset_top = 76.0
-offset_right = 539.352
-offset_bottom = 365.744
-theme_override_styles/panel = SubResource("StyleBoxTexture_ubag5")
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer" unique_id=2143893852]
-layout_mode = 0
-offset_left = -52.0
-offset_top = -54.0
-offset_right = 91.0
-offset_bottom = -14.0
-
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer" unique_id=767130838]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-horizontal_alignment = 3
-vertical_alignment = 1
 
 [editable path="Cartuchera2"]

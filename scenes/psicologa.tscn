@@ -71,6 +71,7 @@ script = ExtResource("1_egq3c")
 scale = Vector2(2, 2)
 texture = ExtResource("2_mvjbq")
 offset = Vector2(0, -60)
+flip_h = true
 hframes = 12
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1448206345]
