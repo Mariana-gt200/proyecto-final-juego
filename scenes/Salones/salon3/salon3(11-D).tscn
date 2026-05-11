@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="14_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_51nep"]
 [ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_7agvf"]
-[ext_resource type="Script" uid="uid://fwxb8t4tyjvk" path="res://scenes/Personajes/estudiantes(10_f).gd" id="16_dli6g"]
 [ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="17_6cwwn"]
 [ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="17_dl2fq"]
 
@@ -458,7 +457,7 @@ shape = SubResource("RectangleShape2D_878pw")
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_o6ntc")]
 y_sort_enabled = true
-position = Vector2(1009, 221)
+position = Vector2(1011, 236)
 
 [node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_51nep")]
 position = Vector2(175, 471)
@@ -589,7 +588,7 @@ flip_h = true
 position = Vector2(1028, 407)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("11_61tsi")]
-position = Vector2(1015, 114)
+position = Vector2(1010, 90)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("12_7b236")]
@@ -610,7 +609,7 @@ Observaciones de campo: Se le ha visto refugiarse en los baños del segundo piso
 Nota confidencial: Los síntomas (fatiga extrema, aislamiento post-almuerzo y decaimiento anímico) sugieren un posible Trastorno de la Conducta Alimentaria (TCA) o un cuadro depresivo mayor. Existe una desconexión total con su entorno. Debo intervenir antes de que su integridad física corra peligro."
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("13_vm2yk")]
-position = Vector2(1104, 298)
+position = Vector2(1009, 400)
 
 [node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("14_o6ntc")]
 position = Vector2(108, 555)
@@ -641,7 +640,6 @@ position = Vector2(632, 457)
 
 [node name="karen" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
 position = Vector2(526, 583)
-script = ExtResource("16_dli6g")
 
 [node name="Sprite2D2" type="Sprite2D" parent="karen" unique_id=417231746]
 

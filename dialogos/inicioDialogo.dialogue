@@ -1,0 +1,17 @@
+~ start
+if not GameManager.conocio_al_director
+	Director: Muy buenos días, señorita Psicóliga.
+	Psicóloga: Buenos días, Director.
+	Psicóloga: Digame, ¿en que le puedo ayudar?
+	Director: He estado recibiendo reportes de tres estudiantes los cuales se les ve con calificaciones graves y malas conductas.
+	Director: Estoy pensando en que el problema debe de ser de algo que les esté pasando.
+	Psicóloga: Entonces tendré que revisarlos, ¿Podría saber quienes son?
+	Director: Por supuesto, el reporte de los tres está en un libro. Puede revisar si gusta en los estantes.
+	set GameManager.conocio_al_director=true
+else
+	Director: ¿Necesita que le ayude en algo?
+	- ¿Me puede repetir dónde está el libro?
+		Director: Lo dejé en una de las estanterías de esta habitación, eres libre de buscarlo.
+	- Oh nada, muchas gracias.
+		Director: Esta bien, le deseo suerte.
+=> END

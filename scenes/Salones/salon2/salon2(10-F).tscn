@@ -17,7 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_vdxde"]
 [ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_h1wjo"]
 [ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="17_xftoy"]
-[ext_resource type="Script" uid="uid://chvk3mdjsonlp" path="res://scenes/Personajes/estudiantes_11_d.gd" id="18_8ogvq"]
 [ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="18_xw2s8"]
 [ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="20_in4ak"]
 
@@ -789,7 +788,7 @@ Nota confidencial: Se han detectado moretones en los antebrazos que el alumno ju
 Sugerencia: Entrevistar a compañeros cercanos para verificar su entorno fuera del aula."
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_bpgl5")]
-position = Vector2(681, 173)
+position = Vector2(659, 197)
 
 [node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("15_vdxde")]
 position = Vector2(379, 592)
@@ -820,7 +819,6 @@ position = Vector2(281, 441)
 
 [node name="carlos" parent="." unique_id=1885491796 instance=ExtResource("17_xftoy")]
 position = Vector2(51, 298)
-script = ExtResource("18_8ogvq")
 
 [node name="Sprite2D2" type="Sprite2D" parent="carlos" unique_id=424644788]
 

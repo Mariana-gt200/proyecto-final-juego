@@ -10,6 +10,10 @@ const FRICTION = 1000.0
 @onready var sprite = $Sprite2D
 
 func _physics_process(delta):
+	
+	if GameManager.is_dialogue_active:
+		return
+	
 	# 2. Lógica de dirección (WASD o Flechas)
 	var direction = Input.get_vector("mover_izquierda", "mover_derecha", "mover_arriba", "mover_abajo")
 	if direction == Vector2.ZERO:

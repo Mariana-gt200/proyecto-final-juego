@@ -15,6 +15,7 @@ func _ready() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	# Verificamos si el cuerpo que entró es el jugador
 	if body.is_in_group("psicologa") or body.name == "psicologa":
+		
 		circle_sprite.visible = true
 
 func _on_body_exited(body: Node2D) -> void:

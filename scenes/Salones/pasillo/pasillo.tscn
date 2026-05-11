@@ -914,7 +914,7 @@ shape = SubResource("RectangleShape2D_64mgy")
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_abtvi")]
 y_sort_enabled = true
-position = Vector2(890, 625)
+position = Vector2(1018, 579)
 
 [node name="Mesa" parent="." unique_id=875276416 instance=ExtResource("3_ixgo1")]
 position = Vector2(868, 514)
@@ -1026,7 +1026,8 @@ theme_override_font_sizes/font_size = 30
 text = "11-D"
 
 [node name="puerta_teletransportadora4" parent="." unique_id=2095765462 instance=ExtResource("9_amvy7")]
-position = Vector2(1047, 640)
+position = Vector2(1036, 695)
+escena_destino = "uid://7j2d3esqsovf"
 
 [node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("10_t4toy")]
 position = Vector2(90, 398)
