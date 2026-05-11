@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://7j2d3esqsovf"]
 
-[ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="1_ajb51"]
+[ext_resource type="PackedScene" uid="uid://bjohxjdkkn7n4" path="res://Interacciones/expedienteDirector.tscn" id="1_ajb51"]
 [ext_resource type="PackedScene" uid="uid://cnvgdpdrcv3wm" path="res://scenes/Personajes/director.tscn" id="2_eik1m"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="2_nmi0j"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="3_nmi0j"]
-[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="4_eik1m"]
+[ext_resource type="PackedScene" uid="uid://c2nygwwwg2i27" path="res://Interacciones/botones libros/botonR.tscn" id="4_eik1m"]
+[ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="6_fanoc"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nmi0j"]
 load_path = "res://.godot/imported/ChatGPT Image 10 may 2026, 04_08_35 p.m..png-42bd9e34cb4676b70fe22a299d72b11b.ctex"
@@ -34,6 +35,7 @@ size = Vector2(744, 265)
 size = Vector2(119, 267)
 
 [node name="SalaDirector" type="Node2D" unique_id=1383259806]
+metadata/_edit_vertical_guides_ = [-57.0]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1210222222]
 offset_left = -29.0
@@ -89,8 +91,8 @@ shape = SubResource("RectangleShape2D_nmi0j")
 position = Vector2(1162, 247.5)
 shape = SubResource("RectangleShape2D_eik1m")
 
-[node name="Expediente" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("1_ajb51")]
-position = Vector2(823, 337)
+[node name="ExpedienteDirector" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("1_ajb51")]
+position = Vector2(835, 336)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("2_nmi0j")]
 position = Vector2(1018, 259)
@@ -103,8 +105,8 @@ position = Vector2(125, 589)
 y_sort_enabled = true
 position = Vector2(1090, 472)
 
-[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("4_eik1m")]
-position = Vector2(188, 496)
+[node name="BotonR" parent="." unique_id=884565984 instance=ExtResource("4_eik1m")]
+position = Vector2(199, 510)
 
-[node name="botonE2" parent="." unique_id=703556291 instance=ExtResource("4_eik1m")]
-position = Vector2(821, 319)
+[node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("6_fanoc")]
+position = Vector2(832, 343)

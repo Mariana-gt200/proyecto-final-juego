@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bjohxjdkkn7n4"]
+
+[ext_resource type="Script" uid="uid://pl2o6o8eapah" path="res://Interacciones/expediente_director.gd" id="1_6f0gh"]
+[ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_y8ug1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6f0gh"]
+radius = 73.0
+height = 242.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rl80q"]
+bg_color = Color(18.892157, 18.892157, 18.892157, 0.6784314)
+
+[node name="ExpedienteDirector" type="Area2D" unique_id=328183346]
+script = ExtResource("1_6f0gh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647776715]
+texture = ExtResource("2_y8ug1")
+offset = Vector2(0, -100)
+region_enabled = true
+region_rect = Rect2(14.684238, 184.41054, 58.40994, 48.0316)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2002026057]
+position = Vector2(-2, -40)
+shape = SubResource("CapsuleShape2D_6f0gh")
+debug_color = Color(0.84416556, 0.32584852, 0.51211923, 0.41960785)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=860870644]
+layer = 10
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1267407552]
+self_modulate = Color(10.118502, 10.698661, 10.501161, 1)
+z_index = 10
+y_sort_enabled = true
+clip_contents = true
+anchors_preset = -1
+anchor_left = 0.252
+anchor_top = 0.053
+anchor_right = 0.662
+anchor_bottom = 0.922
+offset_left = 118.696014
+offset_top = 127.656006
+offset_right = -112.65259
+offset_bottom = -134.41556
+rotation = -0.043072082
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rl80q")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel" unique_id=785504511]
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 17.949823
+offset_top = 19.699211
+offset_right = -21.233307
+offset_bottom = -17.27005
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0037604463
+bbcode_enabled = true
+tab_size = 1
+vertical_alignment = 3

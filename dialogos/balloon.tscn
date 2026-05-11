@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dapneyf45mgfe" path="res://fuentes/Symtext.ttf" id="2_414ji"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="FontFile" uid="uid://d1477207x2rg" path="res://fuentes/dogicapixel.ttf" id="4_cnqbd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -154,7 +155,8 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/normal_font = ExtResource("2_414ji")
+theme_override_constants/line_separation = 5
+theme_override_fonts/normal_font = ExtResource("4_cnqbd")
 theme_override_font_sizes/normal_font_size = 19
 text = "Dialogue..."
 
@@ -174,26 +176,31 @@ autoplay = &"progress"
 [node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" unique_id=966297223 node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -290.5
-offset_top = -35.0
-offset_right = 290.5
-offset_bottom = 35.0
+anchors_preset = -1
+anchor_left = 0.71900004
+anchor_top = 0.56
+anchor_right = 0.71900004
+anchor_bottom = 0.56
+offset_left = -290.28802
+offset_top = -81.880005
+offset_right = 290.71198
+offset_bottom = 82.119995
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
-alignment = 1
+alignment = 2
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=914537232]
 layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_fonts/font = ExtResource("4_cnqbd")
+theme_override_font_sizes/font_size = 19
 text = "Response example"
+alignment = 0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1116280512]
 unique_name_in_owner = true
