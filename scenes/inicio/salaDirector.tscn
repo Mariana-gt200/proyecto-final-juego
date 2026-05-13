@@ -99,14 +99,14 @@ position = Vector2(1018, 259)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Director" parent="." unique_id=613258770 instance=ExtResource("2_eik1m")]
-position = Vector2(125, 589)
+position = Vector2(217, 441)
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("3_nmi0j")]
 y_sort_enabled = true
 position = Vector2(1090, 472)
 
 [node name="BotonR" parent="." unique_id=884565984 instance=ExtResource("4_eik1m")]
-position = Vector2(199, 510)
+position = Vector2(292, 453)
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("6_fanoc")]
 position = Vector2(832, 343)

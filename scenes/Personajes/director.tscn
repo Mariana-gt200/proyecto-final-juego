@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cnvgdpdrcv3wm"]
 
-[ext_resource type="Texture2D" uid="uid://dves0wo7jwvaf" path="res://MemaoCharacterFantasySpritePack/007.png" id="1_ocxuv"]
 [ext_resource type="Script" uid="uid://cybscug8biuno" path="res://scenes/Personajes/director.gd" id="1_ys6nl"]
+[ext_resource type="Texture2D" uid="uid://bjeuselxs83q4" path="res://texturas/Personajes/npcs/ChatGPT Image 12 may 2026, 08_40_08 p.m..png" id="2_ys6nl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocxuv"]
 radius = 83.01929
@@ -10,16 +10,12 @@ height = 236.48387
 [node name="Director" type="Area2D" unique_id=613258770]
 script = ExtResource("1_ys6nl")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=67679650]
-position = Vector2(-1.4999971, -6.700015)
-scale = Vector2(4.6875, 4.6)
-texture = ExtResource("1_ocxuv")
-offset = Vector2(0, -18)
-hframes = 8
-vframes = 21
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1769610605]
+position = Vector2(7.1525574e-07, 0)
+scale = Vector2(0.39338234, 0.38539746)
+texture = ExtResource("2_ys6nl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65305819]
-position = Vector2(-2, -86)
 rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_ocxuv")
 
