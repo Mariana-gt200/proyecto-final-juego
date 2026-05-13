@@ -3,13 +3,13 @@
 [ext_resource type="Script" uid="uid://nabvsa6esycb" path="res://scenes/Salones/puerta_teletransportadora.gd" id="1_higxs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_60w1e"]
-size = Vector2(110, 185)
+size = Vector2(96, 172)
 
 [node name="puerta_teletransportadora" type="Area2D" unique_id=1525846686]
 script = ExtResource("1_higxs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=734750579]
-position = Vector2(14, 9.5)
+position = Vector2(7, 3)
 shape = SubResource("RectangleShape2D_60w1e")
 debug_color = Color(0.7484343, 0.054926112, 5.7756904e-07, 0.41960785)
 

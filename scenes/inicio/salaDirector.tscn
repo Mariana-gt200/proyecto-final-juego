@@ -38,10 +38,10 @@ size = Vector2(119, 267)
 metadata/_edit_vertical_guides_ = [-57.0]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1210222222]
-offset_left = -29.0
-offset_top = -48.0
-offset_right = 1195.0
-offset_bottom = 686.0
+offset_left = -3.0
+offset_top = -14.0
+offset_right = 1152.0
+offset_bottom = 643.0
 texture = SubResource("CompressedTexture2D_nmi0j")
 expand_mode = 1
 
@@ -92,7 +92,7 @@ position = Vector2(1162, 247.5)
 shape = SubResource("RectangleShape2D_eik1m")
 
 [node name="ExpedienteDirector" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("1_ajb51")]
-position = Vector2(835, 336)
+position = Vector2(806, 334)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("2_nmi0j")]
 position = Vector2(1018, 259)
@@ -109,4 +109,4 @@ position = Vector2(1090, 472)
 position = Vector2(292, 453)
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("6_fanoc")]
-position = Vector2(832, 343)
+position = Vector2(804, 295)

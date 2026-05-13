@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://bwx834806ryak"]
 
-[ext_resource type="Texture2D" uid="uid://c83we37fp3aud" path="res://texturas/Personajes/16x32/16x32 Walk-Sheet.png" id="1_b6mj1"]
-[ext_resource type="Texture2D" uid="uid://b38q3c6flylja" path="res://texturas/Personajes/MetroCity 2.0/Hair.png" id="2_4fhxf"]
-[ext_resource type="Texture2D" uid="uid://cvsk573v0j8w7" path="res://texturas/Personajes/MetroCity 2.0/Suit1.png" id="3_n6uta"]
+[ext_resource type="Texture2D" uid="uid://ctaumco3jsru4" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.26.42 AM.png" id="1_pkw55"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r83dr"]
 radius = 4.0
@@ -10,26 +8,11 @@ height = 40.0
 
 [node name="Estudiantes11-D" type="CharacterBody2D" unique_id=768543395]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1428069647]
-scale = Vector2(4, 4)
-texture = ExtResource("1_b6mj1")
-offset = Vector2(0, -16)
-hframes = 4
-vframes = 5
-
-[node name="Hair" type="Sprite2D" parent="." unique_id=244141051]
-position = Vector2(-3.000001, -85)
-scale = Vector2(3.25, 3.2727273)
-texture = ExtResource("2_4fhxf")
-region_enabled = true
-region_rect = Rect2(4.9674683, 95.55776, 20.301926, 22.127396)
-
-[node name="Suit1" type="Sprite2D" parent="." unique_id=1350446951]
-position = Vector2(-1.7499992, -28.999996)
-scale = Vector2(3.9, 4.625)
-texture = ExtResource("3_n6uta")
-region_enabled = true
-region_rect = Rect2(7.705841, 80.022064, 15.402527, 16.460678)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1748443160]
+position = Vector2(-9.000001, -76)
+scale = Vector2(0.11500372, 0.110937506)
+texture = ExtResource("1_pkw55")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89575760]
 position = Vector2(0, -1)
