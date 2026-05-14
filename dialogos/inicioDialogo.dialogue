@@ -1,9 +1,9 @@
 ~ start
 if not GameManager.conocio_al_director
 	[color=d62711]Director: Muy buenos días, señorita Psicóliga.
-	[color=0044ef]Psicóloga: Buenos días, Director. Digame, ¿en que le puedo ayudar?
+	[color=#00CED1]Psicóloga: Buenos días, Director. Digame, ¿en que le puedo ayudar?
 	[color=d62711]Director: He estado recibiendo reportes de tres estudiantes los cuales se les ve con calificaciones graves y malas conductas. Estoy pensando en que el problema debe de ser de algo que les esté pasando.
-	[color=0044ef]Psicóloga: Entonces tendré que revisarlos, ¿Podría saber quienes son?
+	[color=#00CED1]Psicóloga: Entonces tendré que revisarlos, ¿Podría saber quienes son?
 	[color=d62711]Director: Claro, dejé en un libro la hoja donde tengo los nombres de los estudiantes y al grado al que pertenecen, en los salones, hay expedientes detallados de cada caso.
 	[color=d62711]Director: El listado está guardado en un libro, Puede revisar en los estantes por el libro donde está la hoja.
 	set GameManager.conocio_al_director=true

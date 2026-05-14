@@ -1,0 +1,17 @@
+~ start
+ if not GameManager.conocio_a_erika
+	[color=#00CED1]Psicóloga: Hola Erika ¿Cómo estás? no te veo bien.
+	[color=#FFFF00]Erika: Hola... estoy bien, supongo.
+	[color=#00CED1]Psicóloga: He estado revisando tu expediente...
+	[color=#FFFF00]Erika: Sí... no he tenido muchas ganas de venir.
+	[color=#00CED1]Psicóloga: ¿Te has sentido triste o cansada?
+	[color=#FFFF00]Erika: Sí... bastante.
+	- Gracias por confiar en mí. Vamos a ayudarte.
+		[color=#FFFF00]Erika: Gracias por preocuparte, quizás pueda ir a tu oficina apenas acabe mis estudios hoy.
+		set GameManager.respuesta_erika=true
+	- Oh... no creo poder hacer algo al respecto
+		[color=#FFFF00]Erika: Eso esperaba de todas formas... Hasta luego.
+	set GameManager.conocio_a_erika=true
+else:
+	[color=#FFFF00]Erika: Me tengo que ir, adios.
+=> END

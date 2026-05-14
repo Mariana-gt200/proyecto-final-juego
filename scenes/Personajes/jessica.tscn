@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://btn46dx8w8l8q"]
+
+[ext_resource type="Script" uid="uid://c81yg52gmmce1" path="res://scenes/Personajes/jessica.gd" id="1_qkhij"]
+[ext_resource type="Texture2D" uid="uid://r6p0yf5qfsfj" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.26.43 AM (1).png" id="2_fgo27"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jmioi"]
+radius = 4.0
+height = 40.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_478cf"]
+radius = 86.01747
+height = 236.48387
+
+[node name="Area2D" type="Area2D" unique_id=174348233]
+script = ExtResource("1_qkhij")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2069893606]
+position = Vector2(-5, -82)
+scale = Vector2(0.11500372, 0.110937506)
+texture = ExtResource("2_fgo27")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1444775380]
+position = Vector2(0, -1)
+rotation = 1.5446163
+shape = SubResource("CapsuleShape2D_jmioi")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=39299606]
+position = Vector2(-1, -69)
+rotation = -0.034849882
+shape = SubResource("CapsuleShape2D_478cf")
+
+[node name="ExclamationMark" type="Sprite2D" parent="." unique_id=1812449829]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

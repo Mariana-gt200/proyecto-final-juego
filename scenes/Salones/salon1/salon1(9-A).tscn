@@ -9,11 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="9_1pxm4"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="10_3i1h0"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="11_2d0qp"]
-[ext_resource type="PackedScene" uid="uid://bmi18347iyfof" path="res://scenes/Personajes/jessica9A.tscn" id="11_q3eis"]
 [ext_resource type="PackedScene" uid="uid://tgqjr3lymrhg" path="res://scenes/Personajes/estudiante9a.tscn" id="12_6j2lo"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="13_i1gmo"]
 [ext_resource type="PackedScene" uid="uid://j1u65lseoxek" path="res://scenes/Personajes/estudiante9A2.tscn" id="13_y1axx"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_guw3q"]
+[ext_resource type="PackedScene" uid="uid://btn46dx8w8l8q" path="res://scenes/Personajes/jessica.tscn" id="14_y1axx"]
+[ext_resource type="PackedScene" uid="uid://c2nygwwwg2i27" path="res://Interacciones/botones libros/botonR.tscn" id="15_scmh2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
 size = Vector2(965.9453, 199)
@@ -243,14 +244,17 @@ shape = SubResource("RectangleShape2D_sww78")
 position = Vector2(951, 105)
 escena_destino = "uid://suhivdjgfra1"
 
-[node name="jessica" parent="." unique_id=768543395 instance=ExtResource("11_q3eis")]
-position = Vector2(1075, 576)
-
 [node name="Estudiante1Pasillo" parent="." unique_id=2042703939 instance=ExtResource("12_6j2lo")]
 position = Vector2(289, 293)
 
 [node name="Estudiante1Pasillo2" parent="." unique_id=1109526504 instance=ExtResource("13_y1axx")]
-position = Vector2(556, 580)
+position = Vector2(1065, 595)
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_guw3q")]
 position = Vector2(227, 417)
+
+[node name="Area2D" parent="." unique_id=174348233 instance=ExtResource("14_y1axx")]
+position = Vector2(567, 483)
+
+[node name="BotonI" parent="." unique_id=884565984 instance=ExtResource("15_scmh2")]
+position = Vector2(503, 406)
