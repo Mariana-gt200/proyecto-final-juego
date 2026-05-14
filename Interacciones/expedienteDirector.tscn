@@ -14,6 +14,8 @@ bg_color = Color(18.892157, 18.892157, 18.892157, 0.6784314)
 script = ExtResource("1_6f0gh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647776715]
+position = Vector2(-4.999999, -7)
+scale = Vector2(0.7413793, 0.7916667)
 texture = ExtResource("2_y8ug1")
 offset = Vector2(0, -100)
 region_enabled = true

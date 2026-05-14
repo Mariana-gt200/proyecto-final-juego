@@ -90,7 +90,7 @@ scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("CapsuleShape2D_fanoc")
 
 [node name="ExpedienteDirector" parent="LimitesSalon" unique_id=328183346 instance=ExtResource("1_ajb51")]
-position = Vector2(806, 334)
+position = Vector2(808, 317)
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("3_nmi0j")]
 y_sort_enabled = true
