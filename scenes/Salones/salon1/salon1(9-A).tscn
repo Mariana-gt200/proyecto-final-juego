@@ -99,9 +99,7 @@ Informe de la Semana:
 
 Se observa una involución preocupante en la personalidad de Jessica. De ser una alumna extrovertida y el motor social de su clase, ha pasado a un estado de retraimiento absoluto. Participa lo mínimo en clase y evita el contacto visual con sus antiguos amigos.
 
-Observaciones de campo: He notado un patrón repetitivo: varios alumnos le entregan notas de papel de manera hostil durante los cambios de clase. La expresión de Jessica al recibirlas es de terror, no de complicidad. Existe el rumor de que, por miedo a represalias, no destruye estas notas, sino que las oculta en un punto ciego de la escuela para tener 'pruebas' en el futuro.
-
-Nota personal: El acoso escolar parece haber escalado a amenazas físicas. Debo localizar ese escondite; sospecho que algún casillero que ella considere seguro es la clave para desmantelar este círculo de violencia."
+Observaciones de campo: He notado un patrón repetitivo: varios alumnos le entregan notas de papel de manera hostil durante los cambios de clase. La expresión de Jessica al recibirlas es de terror, no de complicidad. "
 
 [node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("3_4vfjy")]
 y_sort_enabled = true

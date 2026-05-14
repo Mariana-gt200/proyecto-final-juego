@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_qk14r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pbdq1"]
-radius = 120.10412
+radius = 130.06152
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rl80q"]
 bg_color = Color(18.892157, 18.892157, 18.892157, 0.6784314)

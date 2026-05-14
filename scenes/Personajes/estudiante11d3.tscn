@@ -1,17 +1,17 @@
-[gd_scene format=3 uid="uid://tgqjr3lymrhg"]
+[gd_scene format=3 uid="uid://bu6wcv5y1kock"]
 
-[ext_resource type="Texture2D" uid="uid://b06lavhqjbm4x" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.15.05 AM.png" id="1_0kg82"]
+[ext_resource type="Texture2D" uid="uid://blqoxpvl3k0pg" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.26.44 AM (2).png" id="1_rqi5t"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r83dr"]
 radius = 4.0
-height = 40.0
+height = 63.716297
 
 [node name="estudiante" type="CharacterBody2D" unique_id=768543395]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1748443160]
-position = Vector2(2.0000038, -82)
-scale = Vector2(0.5040595, 0.5124989)
-texture = ExtResource("1_0kg82")
+position = Vector2(1.9073486e-06, -82.00001)
+scale = Vector2(0.12083559, 0.11812499)
+texture = ExtResource("1_rqi5t")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89575760]

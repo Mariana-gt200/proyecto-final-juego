@@ -9,9 +9,9 @@ if not GameManager.conocio_al_director
 	[color=#00CED1]Psicóloga: Vi tus calificaciones de matemáticas. ¿Necesitas ayuda?
 	[color=#FFFF00]Carlos: No sirve de nada. Pase lo que pase, igual...
 	[color=#FFFF00]Carlos: Da igual, no importa.
-	- Carlos, quiero que sepas que puedes confiar en mí.
+	- Carlos, quiero que sepas que \npuedes confiar en mí.
 		[color=#00CED1]Psicóloga: Esto es un espacio seguro. No estás solo.
-		[color=#FFFF00]Carlos:  Tal vez después.
+		[color=#FFFF00]Carlos: ....
 		[color=#00CED1]Psicóloga: Está bien. Cuando quieras, aquí estoy.
 		[color=#FFFF00]Carlos: Muchas gracias por su apoyo, estoy pensando en ir con usted después.
 		set GameManager.respuesta_carlos=true
