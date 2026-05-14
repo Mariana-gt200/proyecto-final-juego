@@ -14,10 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="12_ao20x"]
 [ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="13_tsegc"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_bpgl5"]
-[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_vdxde"]
-[ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_h1wjo"]
-[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="17_xftoy"]
-[ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="18_xw2s8"]
 [ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="20_in4ak"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
@@ -548,13 +544,6 @@ size = Vector2(63, 13.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
 size = Vector2(60, 10.25)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_in4ak"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ogvq"]
-size = Vector2(260.625, 176.5)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kys7u"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35ttv"]
 
 [node name="Main" type="Node2D" unique_id=1423917372]
@@ -630,8 +619,7 @@ position = Vector2(560, 581)
 position = Vector2(562, 359)
 
 [node name="Mesa9" parent="." unique_id=2076291904 instance=ExtResource("3_2pvua")]
-position = Vector2(161, 596)
-rotation = 1.5707964
+position = Vector2(159, 478)
 
 [node name="Mesa10" parent="." unique_id=1676132341 instance=ExtResource("3_2pvua")]
 position = Vector2(754, 369)
@@ -789,70 +777,6 @@ Sugerencia: Entrevistar a compañeros cercanos para verificar su entorno fuera d
 
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_bpgl5")]
 position = Vector2(659, 197)
-
-[node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("15_vdxde")]
-position = Vector2(379, 592)
-
-[node name="CharacterBody2D2" parent="." unique_id=2081167102 instance=ExtResource("15_vdxde")]
-position = Vector2(1050, 464)
-
-[node name="CharacterBody2D3" parent="." unique_id=1720663516 instance=ExtResource("15_vdxde")]
-position = Vector2(330, 429)
-
-[node name="CharacterBody2D4" parent="." unique_id=1990671930 instance=ExtResource("15_vdxde")]
-position = Vector2(1103, 447)
-
-[node name="estudiantes2-11-D" parent="." unique_id=2114698328 instance=ExtResource("16_h1wjo")]
-position = Vector2(70, 613)
-
-[node name="estudiantes2-11-D2" parent="." unique_id=1461035851 instance=ExtResource("16_h1wjo")]
-position = Vector2(326, 600)
-
-[node name="estudiantes2-11-D3" parent="." unique_id=1820667785 instance=ExtResource("16_h1wjo")]
-position = Vector2(607, 479)
-
-[node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("17_xftoy")]
-position = Vector2(605, 535)
-
-[node name="Estudiantes11-D2" parent="." unique_id=1566847797 instance=ExtResource("17_xftoy")]
-position = Vector2(281, 441)
-
-[node name="carlos" parent="." unique_id=1885491796 instance=ExtResource("17_xftoy")]
-position = Vector2(51, 298)
-
-[node name="Sprite2D2" type="Sprite2D" parent="carlos" unique_id=424644788]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="carlos" unique_id=463318410]
-shape = SubResource("RectangleShape2D_in4ak")
-
-[node name="Area2D" type="Area2D" parent="carlos" unique_id=1445277590]
-position = Vector2(0, -1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="carlos/Area2D" unique_id=1702743188]
-position = Vector2(9.6875, -31.75)
-shape = SubResource("RectangleShape2D_8ogvq")
-
-[node name="CanvasDialogo" type="CanvasLayer" parent="carlos" unique_id=1734324669]
-script = ExtResource("18_xw2s8")
-
-[node name="Panel" type="Panel" parent="carlos/CanvasDialogo" unique_id=1698174696]
-visible = false
-offset_left = 414.0
-offset_top = 570.0
-offset_right = 672.0
-offset_bottom = 639.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_kys7u")
-
-[node name="MarginContainer" type="MarginContainer" parent="carlos/CanvasDialogo/Panel" unique_id=1520922879]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="carlos/CanvasDialogo/Panel/MarginContainer" unique_id=1680641348]
-layout_mode = 2
-
-[node name="Estudiantes11-D4" parent="." unique_id=1318436096 instance=ExtResource("17_xftoy")]
-position = Vector2(884, 369)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=975643698]
 script = ExtResource("20_in4ak")

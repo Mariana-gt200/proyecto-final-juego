@@ -13,10 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="11_61tsi"]
 [ext_resource type="PackedScene" uid="uid://d13q505ljogjg" path="res://Interacciones/expediente.tscn" id="12_7b236"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_vm2yk"]
-[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="14_o6ntc"]
-[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="15_51nep"]
-[ext_resource type="PackedScene" uid="uid://du8ke15uw36bl" path="res://scenes/Personajes/estudiantes_2_11_d.tscn" id="16_7agvf"]
-[ext_resource type="Script" uid="uid://bmcm5o6lv0dfr" path="res://scenes/Salones/salon3/canvas_dialogo.gd" id="17_6cwwn"]
 [ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="17_dl2fq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kc6b5"]
@@ -403,13 +399,6 @@ size = Vector2(63, 13.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
 size = Vector2(60, 10.25)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dli6g"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6cwwn"]
-size = Vector2(260.625, 176.5)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dli6g"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cwwn"]
 
 [node name="Main" type="Node2D" unique_id=1423917372]
@@ -611,76 +600,6 @@ Nota confidencial: Los síntomas (fatiga extrema, aislamiento post-almuerzo y de
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("13_vm2yk")]
 position = Vector2(1009, 400)
 
-[node name="Estudiantes11-D" parent="." unique_id=768543395 instance=ExtResource("14_o6ntc")]
-position = Vector2(108, 555)
-
-[node name="Estudiantes11-D2" parent="." unique_id=1328412463 instance=ExtResource("14_o6ntc")]
-position = Vector2(852, 593)
-
-[node name="Estudiantes11-D3" parent="." unique_id=785799070 instance=ExtResource("14_o6ntc")]
-position = Vector2(155, 291)
-
-[node name="Estudiantes11-D4" parent="." unique_id=682184417 instance=ExtResource("14_o6ntc")]
-position = Vector2(195, 347)
-
-[node name="Estudiantes11-D5" parent="." unique_id=1139186897 instance=ExtResource("14_o6ntc")]
-position = Vector2(719, 406)
-
-[node name="CharacterBody2D" parent="." unique_id=618374476 instance=ExtResource("15_51nep")]
-position = Vector2(172, 559)
-
-[node name="CharacterBody2D2" parent="." unique_id=848434603 instance=ExtResource("15_51nep")]
-position = Vector2(140, 378)
-
-[node name="CharacterBody2D3" parent="." unique_id=1444682408 instance=ExtResource("15_51nep")]
-position = Vector2(387, 383)
-
-[node name="CharacterBody2D4" parent="." unique_id=227905983 instance=ExtResource("15_51nep")]
-position = Vector2(632, 457)
-
-[node name="karen" parent="." unique_id=1695745862 instance=ExtResource("15_51nep")]
-position = Vector2(526, 583)
-
-[node name="Sprite2D2" type="Sprite2D" parent="karen" unique_id=417231746]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="karen" unique_id=1833926656]
-shape = SubResource("RectangleShape2D_dli6g")
-
-[node name="Area2D" type="Area2D" parent="karen" unique_id=2056086750]
-position = Vector2(0, -1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="karen/Area2D" unique_id=1426452705]
-position = Vector2(9.6875, -31.75)
-shape = SubResource("RectangleShape2D_6cwwn")
-
-[node name="CanvasDialogo" type="CanvasLayer" parent="karen" unique_id=603590784]
-script = ExtResource("17_6cwwn")
-
-[node name="Panel" type="Panel" parent="karen/CanvasDialogo" unique_id=948311659]
-visible = false
-offset_left = 414.0
-offset_top = 570.0
-offset_right = 672.0
-offset_bottom = 639.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_dli6g")
-
-[node name="MarginContainer" type="MarginContainer" parent="karen/CanvasDialogo/Panel" unique_id=1364869573]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="karen/CanvasDialogo/Panel/MarginContainer" unique_id=546368933]
-layout_mode = 2
-
-[node name="estudiantes2-11-D" parent="." unique_id=2114698328 instance=ExtResource("16_7agvf")]
-position = Vector2(134, 611)
-
-[node name="estudiantes2-11-D2" parent="." unique_id=1252010082 instance=ExtResource("16_7agvf")]
-position = Vector2(906, 611)
-
-[node name="estudiantes2-11-D3" parent="." unique_id=22815198 instance=ExtResource("16_7agvf")]
-position = Vector2(433, 404)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=185576454]
 script = ExtResource("17_dl2fq")
 
@@ -706,8 +625,5 @@ offset_top = 423.0
 offset_right = 686.0
 offset_bottom = 464.0
 text = "I"
-
-[connection signal="body_entered" from="karen/Area2D" to="psicologa" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="karen/Area2D" to="psicologa" method="_on_area_2d_body_exited"]
 
 [editable path="Casillero interactivo"]

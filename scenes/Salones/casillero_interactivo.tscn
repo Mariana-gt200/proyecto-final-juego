@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbx4r4ppgx0r2"]
 
-[ext_resource type="Texture2D" uid="uid://b8je68b5iwf8r" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 8.png" id="1_ha45t"]
+[ext_resource type="Texture2D" uid="uid://bgm6j47loot8f" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props First Spritesheet 8.png" id="1_ha45t"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wyk6o"]
 radius = 47.5

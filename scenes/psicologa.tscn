@@ -68,8 +68,8 @@ size = Vector2(112, 175)
 script = ExtResource("1_egq3c")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=810551210]
-position = Vector2(2.999998, 3.9999986)
-scale = Vector2(2.1992188, 2.2333984)
+position = Vector2(12.874997, 4.373163)
+scale = Vector2(2.0449219, 2.1401062)
 texture = ExtResource("2_mvjbq")
 offset = Vector2(0, -60)
 flip_h = true
@@ -92,7 +92,7 @@ shape = SubResource("CapsuleShape2D_q2buh")
 position = Vector2(3, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=869153955]
-position = Vector2(-1, -76)
+position = Vector2(7, -76)
 shape = SubResource("RectangleShape2D_egq3c")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

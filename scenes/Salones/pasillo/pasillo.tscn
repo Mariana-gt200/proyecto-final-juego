@@ -2,10 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_abtvi"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_ixgo1"]
+[ext_resource type="PackedScene" uid="uid://klnp8donc8ls" path="res://scenes/Personajes/profesoraPasillo.tscn" id="7_abtvi"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
-[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiantes(10-F).tscn" id="10_t4toy"]
-[ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiantes(9-A).tscn" id="11_cuxw4"]
-[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiantes_11_d.tscn" id="13_cmlx3"]
+[ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiante2Pasillo.tscn" id="10_t4toy"]
+[ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiante3Pasillo.tscn" id="11_cuxw4"]
+[ext_resource type="PackedScene" uid="uid://bwx834806ryak" path="res://scenes/Personajes/estudiante1Pasillo.tscn" id="13_cmlx3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ixgo1"]
 load_path = "res://.godot/imported/ChatGPT Image 13 may 2026, 03_28_17 p.m..png-f4d1edbc7e0a38226566af309c776ec7.ctex"
@@ -115,5 +116,8 @@ position = Vector2(1072, 442)
 
 [node name="Estudiantes11-D2" parent="." unique_id=1847344295 instance=ExtResource("13_cmlx3")]
 position = Vector2(686, 520)
+
+[node name="profesoraPasillo" parent="." unique_id=1325838249 instance=ExtResource("7_abtvi")]
+position = Vector2(85, 457)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=848481553]

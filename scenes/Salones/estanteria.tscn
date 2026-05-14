@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dgyc8eijyals7"]
 
-[ext_resource type="Texture2D" uid="uid://dgvo28yki52pp" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="1_35he8"]
+[ext_resource type="Texture2D" uid="uid://d0s8la0if8bnq" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="1_35he8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wyg4j"]
 size = Vector2(594.19934, 59.13307)

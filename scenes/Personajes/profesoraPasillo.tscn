@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://klnp8donc8ls"]
+
+[ext_resource type="Texture2D" uid="uid://cju1o2u8dkm3c" path="res://texturas/Personajes/npcs/y.png" id="1_1ljkq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s07xo"]
+radius = 2.0
+height = 54.0
+
+[node name="profesoraPasillo" type="CharacterBody2D" unique_id=1906568293]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=122571149]
+position = Vector2(-0.5156472, -79.206726)
+scale = Vector2(0.3379044, 0.31641498)
+texture = ExtResource("1_1ljkq")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1529553035]
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_s07xo")

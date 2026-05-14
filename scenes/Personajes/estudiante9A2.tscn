@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://j1u65lseoxek"]
+
+[ext_resource type="Texture2D" uid="uid://be25n3qysdqgg" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.39.42 AM (1).png" id="1_ahw4u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r83dr"]
+radius = 4.0
+height = 40.0
+
+[node name="Estudiante1Pasillo" type="CharacterBody2D" unique_id=768543395]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1748443160]
+position = Vector2(0, -72)
+scale = Vector2(0.064355135, 0.06684563)
+texture = ExtResource("1_ahw4u")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89575760]
+position = Vector2(0, -1)
+rotation = 1.5446163
+shape = SubResource("CapsuleShape2D_r83dr")

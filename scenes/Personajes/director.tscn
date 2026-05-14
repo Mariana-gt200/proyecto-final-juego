@@ -1,22 +1,22 @@
 [gd_scene format=3 uid="uid://cnvgdpdrcv3wm"]
 
 [ext_resource type="Script" uid="uid://cybscug8biuno" path="res://scenes/Personajes/director.gd" id="1_ys6nl"]
-[ext_resource type="Texture2D" uid="uid://bjeuselxs83q4" path="res://texturas/Personajes/npcs/ChatGPT Image 12 may 2026, 08_40_08 p.m..png" id="2_ys6nl"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ocxuv"]
+load_path = "res://.godot/imported/ChatGPT Image 12 may 2026, 08_40_08 p.m..png-21308a829db8b30967ded1a3c4f1906f.ctex"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocxuv"]
-radius = 83.01929
+radius = 86.01747
 height = 236.48387
 
 [node name="Director" type="Area2D" unique_id=613258770]
 script = ExtResource("1_ys6nl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1769610605]
-position = Vector2(0, -9.536743e-07)
-scale = Vector2(0.34865198, 0.3442699)
-texture = ExtResource("2_ys6nl")
+scale = Vector2(0.40471816, 0.38285586)
+texture = SubResource("CompressedTexture2D_ocxuv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65305819]
-position = Vector2(7.6293945e-06, -3.8146973e-06)
 rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_ocxuv")
 
