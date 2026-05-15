@@ -26,4 +26,4 @@ func _on_reiniciar_pressed() -> void:
 
 
 func _on_ir_al_inicio_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/inicio/inicio.tscn")
+	get_tree().quit()
