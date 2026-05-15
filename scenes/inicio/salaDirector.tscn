@@ -39,9 +39,10 @@ height = 59.99652
 metadata/_edit_vertical_guides_ = [-57.0]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1210222222]
+offset_left = -2.0
 offset_top = -11.0
-offset_right = 1154.0
-offset_bottom = 625.0
+offset_right = 1153.0
+offset_bottom = 638.0
 texture = SubResource("CompressedTexture2D_nmi0j")
 expand_mode = 1
 
@@ -52,11 +53,11 @@ position = Vector2(575, 313)
 y_sort_enabled = true
 
 [node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=1189688270]
-position = Vector2(129, 163)
+position = Vector2(126, 178)
 shape = SubResource("RectangleShape2D_fanoc")
 
 [node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=1724991429]
-position = Vector2(-5, 360)
+position = Vector2(-6, 365)
 shape = SubResource("RectangleShape2D_tbcvr")
 
 [node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=2027120454]
@@ -76,7 +77,7 @@ position = Vector2(575, 668)
 shape = SubResource("RectangleShape2D_lmyxe")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="LimitesSalon" unique_id=7671091]
-position = Vector2(574, 165)
+position = Vector2(571, 170)
 shape = SubResource("RectangleShape2D_nmi0j")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="LimitesSalon" unique_id=2082479716]
@@ -97,7 +98,7 @@ y_sort_enabled = true
 position = Vector2(1026, 482)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("2_nmi0j")]
-position = Vector2(996, 237)
+position = Vector2(987, 247)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="BotonR" parent="." unique_id=884565984 instance=ExtResource("4_eik1m")]

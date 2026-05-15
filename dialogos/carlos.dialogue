@@ -1,5 +1,5 @@
 ~ start
-if not GameManager.conocio_al_director
+if not GameManager.conocio_a_carlos:
 	[color=#00CED1]Psicóloga: Hola Carlos, ¿cómo estás hoy?
 	[color=#FFFF00]Carlos: Bien... supongo.
 	[color=#00CED1]Psicóloga: He notado que has estado un poco tenso en clase.
