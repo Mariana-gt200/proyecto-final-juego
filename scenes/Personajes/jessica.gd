@@ -5,7 +5,7 @@ extends Area2D
 
 
 var is_psicologa_close=false
-const carlos=preload("res://dialogos/carlos.dialogue")
+const jessica=preload("res://dialogos/jessica.dialogue")
 
 
 func _ready() -> void:
@@ -31,4 +31,4 @@ func on_dialogue_ended(dialogue):
 
 func _physics_process(delta: float) -> void:
 	if is_psicologa_close and Input.is_action_just_pressed("hablar") and not GameManager.is_dialogue_active:
-		DialogueManager.show_dialogue_balloon(carlos)
+		DialogueManager.show_dialogue_balloon(jessica)
