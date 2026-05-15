@@ -1,5 +1,34 @@
 ~ start
-[color=#00CED1]Psicóloga: Hola Jessica, ¿Cómo estás?
-[color=#FFFF00]Jessica: idk 
-
+if not GameManager.conocio_a_jessica:
+	[color=#00CED1]Psicóloga: Hola, Jessica. ¿Puedo sentarme contigo un momento?
+	[color=#FFFF00]Jessica: Si quiere.
+	[color=#00CED1]Psicóloga: Gracias. He notado que últimamente estás más callada.
+	[color=#FFFF00]Jessica: No tengo nada que decir.
+	[color=#00CED1]Psicóloga: Está bien. No tienes que hablar si no quieres.
+	[color=#FFFF00]Jessica: Antes era diferente...
+	[color=#00CED1]Psicóloga: ¿Sí? Cuéntame.
+	[color=#FFFF00]Jessica: Yo reía mucho. Mis amigas y yo hacíamos tonterías. Ahora... ya no.
+	[color=#00CED1]Psicóloga: ¿Qué pasó, Jessica?
+	[color=#FFFF00]Jessica: No sé. Ya no quiero molestar.
+	[color=#00CED1]Psicóloga: ¿Molestar a quién?
+	[color=#FFFF00]Jessica: A nadie. Olvídalo.
+	[color=#00CED1]Psicóloga: Jessica, he visto que algunos compañeros te dan notas en los pasillos. ¿Qué dicen esas notas?
+	[color=#FFFF00]Jessica: ...No es nada. Bromas de mal gusto.
+	[color=#00CED1]Psicóloga: Tus compañeros me han dicho que antes eras el alma de la clase. Que ahora apenas hablas.
+	[color=#FFFF00]Jessica: Ya no quiero ser el centro de atención.
+	[color=#00CED1]Psicóloga: ¿Por qué?
+	[color=#FFFF00]Jessica: Entendí que a la gente no le importas de verdad. Eres divertida hasta que te vuelves un estorbo.
+	[color=#00CED1]Psicóloga: ¿Quién te ha dicho eso?
+	[color=#FFFF00]Jessica: Nadie, son sus acciones lo que me hacen saberlo.
+	- Jessica, quiero que sepas algo. No eres \nun estorbo. Y lo que está pasando no es \ntu culpa.
+		[color=#FFFF00]Jessica: ¿No?
+		[color=#00CED1]Psicóloga: No, quiero ayudarte. y necesito que confíes en mí.
+		[color=#00CED1]Psicóloga: No estás sola. Recuérdalo.
+		[color=#FFFF00]Jessica: ... Creo que hablaré con usted despues, gracias.
+		set GameManager.respuesta_jessica=true
+	- ... Solo vuelve a ser como antes
+		[color=#FFFF00]Jessica: ...Está bien, creo. Tengo que hacer trabajos, bye.
+	set GameManager.conocio_a_jessica=true
+else: 
+	[color=#FFFF00]Jessica: ... Supongo que no tengo nada más que decir...
 => END

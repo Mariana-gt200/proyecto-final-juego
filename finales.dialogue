@@ -1,0 +1,6 @@
+~ start
+if GameManager.conocio_al_director and GameManager.conocio_a_jessica and GameManager.conocio_a_carlos and GameManager.cconocio_a_erika:
+	[color=d62711]Director: Supongo que ya ha terminado su trabajo.
+	[color=#00CED1]Psicóloga: Claro, he estado llendo de salón en salón buscando a los estudiantes.
+	[color=d62711]Director: El tiempo dirá si los chicos han podido recuperarse, así que espero que sus charlas hayan servido		
+=> END
