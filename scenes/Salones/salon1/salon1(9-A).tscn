@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c2nygwwwg2i27" path="res://Interacciones/botones libros/botonR.tscn" id="15_scmh2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
-size = Vector2(965.9453, 199)
+size = Vector2(945.97266, 199)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sg84n"]
 size = Vector2(78.5, 712)
@@ -55,7 +55,7 @@ position = Vector2(575, 313)
 y_sort_enabled = true
 
 [node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=7345827]
-position = Vector2(437, 99.5)
+position = Vector2(427, 98)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=10463118]
@@ -63,7 +63,7 @@ position = Vector2(-17.25, 361)
 shape = SubResource("RectangleShape2D_sg84n")
 
 [node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=268124758]
-position = Vector2(480, 713)
+position = Vector2(489, 717)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=2061851109]
@@ -71,7 +71,7 @@ position = Vector2(1166, 315)
 shape = SubResource("RectangleShape2D_sg84n")
 
 [node name="Arriba2" type="CollisionShape2D" parent="LimitesSalon" unique_id=696983747]
-position = Vector2(1074, 764)
+position = Vector2(1046, 764)
 shape = SubResource("RectangleShape2D_jjobq")
 
 [node name="Arriba3" type="CollisionShape2D" parent="LimitesSalon" unique_id=1890297680]
@@ -239,7 +239,7 @@ shape = SubResource("RectangleShape2D_sww78")
 [node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("11_2d0qp")]
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("13_i1gmo")]
-position = Vector2(951, 105)
+position = Vector2(943, 109)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Estudiante1Pasillo" parent="." unique_id=2042703939 instance=ExtResource("12_6j2lo")]
@@ -254,5 +254,5 @@ position = Vector2(227, 417)
 [node name="Area2D" parent="." unique_id=174348233 instance=ExtResource("14_y1axx")]
 position = Vector2(567, 483)
 
-[node name="BotonI" parent="." unique_id=884565984 instance=ExtResource("15_scmh2")]
-position = Vector2(503, 406)
+[node name="BotonI" parent="." unique_id=1648221755 instance=ExtResource("15_scmh2")]
+position = Vector2(508, 406)

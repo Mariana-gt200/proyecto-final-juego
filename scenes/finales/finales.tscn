@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dtj6galg0iq1s"]
+
+[ext_resource type="Script" uid="uid://cjs25k8kb5hvb" path="res://scenes/finales/finales.gd" id="1_uk1fr"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=794265262]
+script = ExtResource("1_uk1fr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1658447117]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

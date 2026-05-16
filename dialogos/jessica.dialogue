@@ -1,5 +1,6 @@
 ~ start
 if not GameManager.conocio_a_jessica:
+	set GameManager.conocio_a_jessica=true
 	[color=#00CED1]Psicóloga: Hola, Jessica. ¿Puedo sentarme contigo un momento?
 	[color=#FFFF00]Jessica: Si quiere.
 	[color=#00CED1]Psicóloga: Gracias. He notado que últimamente estás más callada.
@@ -28,7 +29,7 @@ if not GameManager.conocio_a_jessica:
 		set GameManager.respuesta_jessica=true
 	- ... Solo vuelve a ser como antes
 		[color=#FFFF00]Jessica: ...Está bien, creo. Tengo que hacer trabajos, bye.
-	set GameManager.conocio_a_jessica=true
+	
 else: 
 	[color=#FFFF00]Jessica: ... Supongo que no tengo nada más que decir...
 => END

@@ -121,3 +121,7 @@ position = Vector2(686, 520)
 position = Vector2(85, 457)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=848481553]
+
+[node name="puerta_teletransportadora5" parent="." unique_id=95228200 instance=ExtResource("9_amvy7")]
+position = Vector2(6, 516)
+escena_destino = "uid://c22bcrmr4nltd"
