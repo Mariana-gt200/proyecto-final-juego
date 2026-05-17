@@ -6,11 +6,14 @@ if not GameManager.conocio_al_director
 	[color=#00CED1]Psicóloga: Entonces tendré que revisarlos, ¿Podría saber quienes son?
 	[color=d62711]Director: Claro, dejé en un libro la hoja donde tengo los nombres de los estudiantes y al grado al que pertenecen, en los salones, hay expedientes detallados de cada caso.
 	[color=d62711]Director: El listado está guardado en un libro, Puede revisar en los estantes por el libro donde está la hoja.
+	[color=d62711]Director: Tienes que empezar desde el grado más bajo al grado más alto.
 	set GameManager.conocio_al_director=true
 else
 	[color=d62711]Director: ¿Necesita que le ayude en algo?
 	- ¿Me puede repetir en dónde está la hoja?
 		[color=d62711]Director: La dejé dentro de un libro en una de las estanterías de esta habitación, eres libre de buscarlo.
+		[color=d62711]Director: Recuerda que tienes que empezar desde el grado más bajo al grado más alto.
 	- Oh nada, muchas gracias.
 		[color=d62711]Director: Esta bien, le deseo suerte.
+		[color=d62711]Director: Recuerda que tienes que empezar desde el grado más bajo al grado más alto.
 => END
