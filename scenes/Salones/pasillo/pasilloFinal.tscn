@@ -62,7 +62,8 @@ y_sort_enabled = true
 position = Vector2(951, 510)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("4_epxrw")]
-position = Vector2(1136, 527)
+position = Vector2(1148, 523)
+scale = Vector2(1, 2.44)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="puerta_teletransportadora2" parent="." unique_id=1001711749 instance=ExtResource("4_epxrw")]

@@ -127,6 +127,7 @@ position = Vector2(85, 457)
 
 [node name="puerta_teletransportadora5" parent="." unique_id=95228200 instance=ExtResource("9_amvy7")]
 position = Vector2(6, 516)
+scale = Vector2(-0.8125704, 3.7418773)
 escena_destino = "uid://c22bcrmr4nltd"
 
 [node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("8_ixgo1")]
