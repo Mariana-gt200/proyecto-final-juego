@@ -3,8 +3,8 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
+func _ready():
+	MusicManager.play_music(preload("res://musica/fondo.mp3"))
 	
 
 

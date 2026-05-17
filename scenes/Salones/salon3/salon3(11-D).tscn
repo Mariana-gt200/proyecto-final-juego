@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dnr8u7somo4o2"]
 
 [ext_resource type="Texture2D" uid="uid://bmvc8xicv6wa3" path="res://texturas/fondos/ChatGPT Image 14 may 2026, 11_00_47 a.m..png" id="1_6rdng"]
+[ext_resource type="Script" uid="uid://ctx2yx87qsskf" path="res://scenes/Salones/salon3/salon_3(11_d).gd" id="1_dl2fq"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_51nep"]
-[ext_resource type="Texture2D" uid="uid://cfrb7fgpfgnj0" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="6_dli6g"]
+[ext_resource type="Texture2D" uid="uid://dn7t418bmhdjf" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom 2 Props/Classroom Props Second Spritesheet 4.png" id="6_dli6g"]
 [ext_resource type="PackedScene" uid="uid://d0i6fpyd46580" path="res://scenes/Salones/cartuchera.tscn" id="7_6cwwn"]
 [ext_resource type="PackedScene" uid="uid://m024fkiegi55" path="res://scenes/Salones/lapices_2.tscn" id="8_ued5s"]
 [ext_resource type="PackedScene" uid="uid://rxg87mpruhfk" path="res://scenes/Salones/mesa_profesor.tscn" id="10_2yfc6"]
@@ -34,6 +35,7 @@ size = Vector2(60, 10.25)
 
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
+script = ExtResource("1_dl2fq")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1173371491]
 offset_left = -2.0

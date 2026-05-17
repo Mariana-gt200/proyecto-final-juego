@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://daynur12fbyml"]
 
+[ext_resource type="Script" uid="uid://c0ckaykxjedp3" path="res://scenes/Salones/salon2/salon_2(10_f).gd" id="1_in4ak"]
 [ext_resource type="Texture2D" uid="uid://ckuupddi1ogcv" path="res://texturas/fondos/ChatGPT Image 14 may 2026, 10_57_38 a.m..png" id="1_vdxde"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_vdxde"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_2pvua"]
@@ -46,6 +47,7 @@ size = Vector2(60, 10.25)
 
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
+script = ExtResource("1_in4ak")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=228830884]
 offset_left = -2.0
