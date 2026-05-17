@@ -1,11 +1,163 @@
 [gd_scene format=3 uid="uid://cg0hrjk1ddv6e"]
 
-[ext_resource type="Texture2D" uid="uid://clsf4rbsuc6q7" path="res://texturas/fondos/58cab525-a7f1-4940-866a-3c2db770e229.jpg" id="1_37heq"]
+[ext_resource type="Script" uid="uid://c3tuf3yq5nyh6" path="res://scenes/finales/final_bueno.gd" id="1_5v61s"]
+[ext_resource type="Texture2D" uid="uid://c6ciem64l5mhu" path="res://texturas/fondos/Gemini_Generated_Image_dlqffxdlqffxdlqf.png" id="1_37heq"]
+[ext_resource type="FontFile" uid="uid://dapneyf45mgfe" path="res://fuentes/Symtext.ttf" id="3_hgwrp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ilslo"]
+resource_local_to_scene = true
+resource_name = "botones inicio"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8534875, 0.85348773, 0.85348743, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmxe6"]
+resource_local_to_scene = true
+resource_name = "botones inicio"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8534875, 0.85348773, 0.85348743, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_db5f3"]
+resource_local_to_scene = true
+resource_name = "boton hover"
+bg_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8534875, 0.85348773, 0.85348743, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v61s"]
+resource_local_to_scene = true
+resource_name = "boton hover"
+bg_color = Color(18.892157, 18.892157, 18.892157, 0.5686275)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(18.892157, 18.892157, 18.892157, 0.14509805)
+border_blend = true
+corner_detail = 20
 
 [node name="FinalBueno" type="Node2D" unique_id=1789779124]
+script = ExtResource("1_5v61s")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1422424505]
 offset_right = 1162.0
-offset_bottom = 646.0
+offset_bottom = 647.0
 texture = ExtResource("1_37heq")
 expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect" unique_id=2109408907]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -127.5
+offset_top = -159.0
+offset_right = 127.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 14
+
+[node name="irAlInicio" type="Button" parent="TextureRect/VBoxContainer" unique_id=867871175]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.37346694, 0.5843688, 1, 1)
+theme_override_colors/font_focus_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_fonts/font = ExtResource("3_hgwrp")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_ilslo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmxe6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_db5f3")
+text = "Ir al inicio"
+
+[node name="Salir" type="Button" parent="TextureRect/VBoxContainer" unique_id=1553565423]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.37346694, 0.5843688, 1, 1)
+theme_override_colors/font_focus_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.37254903, 0.58431375, 1, 1)
+theme_override_fonts/font = ExtResource("3_hgwrp")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_ilslo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmxe6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_db5f3")
+text = "Salir"
+
+[node name="Label" type="Label" parent="." unique_id=1705469605]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 266.0
+offset_top = 39.0
+offset_right = 879.0
+offset_bottom = 178.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.16050798, 0.35650095, 0.6255116, 1)
+theme_override_fonts/font = ExtResource("3_hgwrp")
+theme_override_font_sizes/font_size = 69
+theme_override_styles/normal = SubResource("StyleBoxFlat_5v61s")
+text = "Final bueno"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=551490695]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -403.0
+offset_top = 186.0
+offset_right = 1557.0
+offset_bottom = 325.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.16050798, 0.35650095, 0.6255116, 1)
+theme_override_fonts/font = ExtResource("3_hgwrp")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_5v61s")
+text = "Has podido ayudar a todos los estudiantes. 
+como muestra de tu esfuerzo, te han invitado una 
+empanada!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureRect/VBoxContainer/irAlInicio" to="." method="_on_ir_al_inicio_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Salir" to="." method="_on_salir_pressed"]

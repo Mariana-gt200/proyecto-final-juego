@@ -64,7 +64,7 @@ position = Vector2(951, 510)
 position = Vector2(1136, 527)
 escena_destino = "uid://suhivdjgfra1"
 
-[node name="puerta_teletransportadora2" parent="." unique_id=1764277752 instance=ExtResource("4_epxrw")]
-position = Vector2(110, 266)
-scale = Vector2(1.5599997, 1)
-script = null
+[node name="puerta_teletransportadora2" parent="." unique_id=1001711749 instance=ExtResource("4_epxrw")]
+position = Vector2(108, 272)
+scale = Vector2(1.72, 1)
+escena_destino = "uid://dtj6galg0iq1s"
