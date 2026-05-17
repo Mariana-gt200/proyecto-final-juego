@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://djayt6sdpkhea" path="res://expediente.gd" id="1_rl80q"]
 [ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_qk14r"]
+[ext_resource type="AudioStream" uid="uid://ed4q4nx4arto" path="res://musica/abrirExpediente.mp3" id="3_qk14r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pbdq1"]
 radius = 130.06152
@@ -59,3 +60,6 @@ grow_vertical = 2
 rotation = 0.0037604463
 bbcode_enabled = true
 vertical_alignment = 3
+
+[node name="hoja" type="AudioStreamPlayer" parent="." unique_id=1084049745]
+stream = ExtResource("3_qk14r")

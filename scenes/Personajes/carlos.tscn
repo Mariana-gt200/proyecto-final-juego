@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cj73pbg3b0cnm" path="res://scenes/Personajes/carlos.gd" id="1_2ysj4"]
 [ext_resource type="Texture2D" uid="uid://7snpcj08s2e1" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.26.43 AM.png" id="2_2ysj4"]
+[ext_resource type="AudioStream" uid="uid://b7c2m2y613nwi" path="res://musica/botonHablar.mp3" id="3_xj5nt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jmioi"]
 radius = 4.0
@@ -31,6 +32,9 @@ rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_478cf")
 
 [node name="ExclamationMark" type="Sprite2D" parent="." unique_id=1812449829]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1324025757]
+stream = ExtResource("3_xj5nt")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

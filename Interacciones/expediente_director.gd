@@ -2,6 +2,8 @@ extends Area2D
 
 @export var nombre_alumno : String = "Nombre"
 @export_multiline var informacion : String = "Datos del alumno..."
+@onready var abrir=$abrir
+
 
 var en_rango = false
 
@@ -22,8 +24,11 @@ func _on_body_exited(body):
 
 func _process(_delta):
 	if en_rango and Input.is_action_just_pressed("interactuar"): 
+		abrir.play()
+	
 		if $CanvasLayer/Panel.visible:
 			$CanvasLayer/Panel.visible = false
+			
 			print("--- EXPEDIENTE CERRADO ---")
 		else:
 			abrir_expediente()

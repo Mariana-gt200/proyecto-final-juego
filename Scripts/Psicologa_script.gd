@@ -9,6 +9,7 @@ const FRICTION = 1000.0
 @onready var anim_player = $AnimationPlayer
 @onready var sprite = $Sprite2D
 
+
 func _physics_process(delta):
 	
 	if GameManager.is_dialogue_active:

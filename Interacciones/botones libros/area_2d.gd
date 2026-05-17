@@ -3,6 +3,7 @@ extends Area2D
 # Referencia al gráfico del círculo
 @onready var circle_sprite: Sprite2D = $Sprite2D
 
+
 func _ready() -> void:
 	# El círculo inicia invisible
 	circle_sprite.visible = false

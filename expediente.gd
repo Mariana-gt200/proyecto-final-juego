@@ -2,6 +2,7 @@ extends Area2D
 
 @export var nombre_alumno : String = "Nombre"
 @export_multiline var informacion : String = "Datos del alumno..."
+@onready var abrir=$hoja
 
 var en_rango = false
 
@@ -16,12 +17,15 @@ func _on_body_entered(body):
 		print("✅ Detectada psicóloga cerca de: ", nombre_alumno)
 
 func _on_body_exited(body):
+	
 	if body.name == "psicologa":
 		en_rango = false
 		$CanvasLayer/Panel.visible = false
 
 func _process(_delta):
 	if en_rango and Input.is_action_just_pressed("interactuar"): 
+		abrir.play()
+		
 		if $CanvasLayer/Panel.visible:
 			$CanvasLayer/Panel.visible = false
 			print("--- EXPEDIENTE CERRADO ---")

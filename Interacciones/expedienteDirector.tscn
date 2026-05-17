@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://pl2o6o8eapah" path="res://Interacciones/expediente_director.gd" id="1_6f0gh"]
 [ext_resource type="Texture2D" uid="uid://bdod6ed1mnfs2" path="res://texturas/2dClassroomAssetPackByStyloo/Classroom/Classroom Second Spritesheet 1.png" id="2_y8ug1"]
+[ext_resource type="AudioStream" uid="uid://ed4q4nx4arto" path="res://musica/abrirExpediente.mp3" id="3_g5dkh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6f0gh"]
 radius = 73.0
@@ -63,3 +64,6 @@ rotation = 0.0037604463
 bbcode_enabled = true
 tab_size = 1
 vertical_alignment = 3
+
+[node name="abrir" type="AudioStreamPlayer" parent="." unique_id=2143330605]
+stream = ExtResource("3_g5dkh")

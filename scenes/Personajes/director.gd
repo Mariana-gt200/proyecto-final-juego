@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var exclamation_mark= $ExclamationMark
-
+@onready var hablar=$AudioStreamPlayer
 
 
 var is_psicologa_close=false
@@ -35,6 +35,8 @@ func on_dialogue_ended(dialogue):
 
 func _physics_process(delta: float) -> void:
 	if is_psicologa_close and Input.is_action_just_pressed("hablar") and not GameManager.is_dialogue_active:
+		hablar.play()
+		await hablar.finished
 		DialogueManager.show_dialogue_balloon(INICIO_DIALOGO)
 		if GameManager.mission_actual==0:
 			GameManager.completar_misiones()

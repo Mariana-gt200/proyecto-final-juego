@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cnvgdpdrcv3wm"]
 
 [ext_resource type="Script" uid="uid://cybscug8biuno" path="res://scenes/Personajes/director.gd" id="1_ys6nl"]
+[ext_resource type="AudioStream" uid="uid://b7c2m2y613nwi" path="res://musica/botonHablar.mp3" id="2_ys6nl"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ocxuv"]
 load_path = "res://.godot/imported/ChatGPT Image 12 may 2026, 08_40_08 p.m..png-21308a829db8b30967ded1a3c4f1906f.ctex"
@@ -21,6 +22,9 @@ rotation = -0.034849882
 shape = SubResource("CapsuleShape2D_ocxuv")
 
 [node name="ExclamationMark" type="Sprite2D" parent="." unique_id=54491989]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1066965041]
+stream = ExtResource("2_ys6nl")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

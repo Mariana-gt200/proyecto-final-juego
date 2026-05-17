@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://7j2d3esqsovf"]
 
+[ext_resource type="Script" uid="uid://dcowb8u2rfsk4" path="res://scenes/inicio/sala_director.gd" id="1_7lv77"]
 [ext_resource type="PackedScene" uid="uid://bjohxjdkkn7n4" path="res://Interacciones/expedienteDirector.tscn" id="1_ajb51"]
 [ext_resource type="PackedScene" uid="uid://cnvgdpdrcv3wm" path="res://scenes/Personajes/director.tscn" id="2_eik1m"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="2_nmi0j"]
@@ -37,6 +38,7 @@ radius = 12.988403
 height = 59.99652
 
 [node name="SalaDirector" type="Node2D" unique_id=1383259806]
+script = ExtResource("1_7lv77")
 metadata/_edit_vertical_guides_ = [-57.0]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1210222222]
