@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b3dky7juhsye4" path="res://texturas/fondos/ChatGPT Image 16 may 2026, 03_10_36 p.m..png" id="1_pn8m8"]
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_vnf3b"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="4_epxrw"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="5_ihg3e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pn8m8"]
 size = Vector2(67.5, 712)
@@ -68,3 +69,5 @@ escena_destino = "uid://suhivdjgfra1"
 position = Vector2(108, 272)
 scale = Vector2(1.72, 1)
 escena_destino = "uid://dtj6galg0iq1s"
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("5_ihg3e")]

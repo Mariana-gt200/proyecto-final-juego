@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="3_nmi0j"]
 [ext_resource type="PackedScene" uid="uid://c2nygwwwg2i27" path="res://Interacciones/botones libros/botonR.tscn" id="4_eik1m"]
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="6_fanoc"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="7_tbcvr"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nmi0j"]
 load_path = "res://.godot/imported/ChatGPT Image 10 may 2026, 04_08_35 p.m..png-42bd9e34cb4676b70fe22a299d72b11b.ctex"
@@ -109,3 +110,6 @@ position = Vector2(799, 301)
 
 [node name="Director" parent="." unique_id=613258770 instance=ExtResource("2_eik1m")]
 position = Vector2(231, 405)
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("7_tbcvr")]
+position = Vector2(27, 26)

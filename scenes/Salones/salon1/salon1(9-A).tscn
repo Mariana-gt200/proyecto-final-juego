@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="14_guw3q"]
 [ext_resource type="PackedScene" uid="uid://btn46dx8w8l8q" path="res://scenes/Personajes/jessica.tscn" id="14_y1axx"]
 [ext_resource type="PackedScene" uid="uid://c2nygwwwg2i27" path="res://Interacciones/botones libros/botonR.tscn" id="15_scmh2"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="16_c26bk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
 size = Vector2(945.97266, 199)
@@ -23,7 +24,7 @@ size = Vector2(945.97266, 199)
 size = Vector2(78.5, 712)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jjobq"]
-size = Vector2(225, 297.375)
+size = Vector2(225, 283.6875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5igfb"]
 size = Vector2(63.5, 13)
@@ -75,7 +76,7 @@ position = Vector2(1046, 764)
 shape = SubResource("RectangleShape2D_jjobq")
 
 [node name="Arriba3" type="CollisionShape2D" parent="LimitesSalon" unique_id=1890297680]
-position = Vector2(1150, 84)
+position = Vector2(1156.8438, 84)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_jjobq")
 
@@ -239,7 +240,7 @@ shape = SubResource("RectangleShape2D_sww78")
 [node name="Lapices2" parent="." unique_id=1611322162 instance=ExtResource("11_2d0qp")]
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("13_i1gmo")]
-position = Vector2(943, 109)
+position = Vector2(951, 115)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Estudiante1Pasillo" parent="." unique_id=2042703939 instance=ExtResource("12_6j2lo")]
@@ -256,3 +257,5 @@ position = Vector2(567, 483)
 
 [node name="BotonI" parent="." unique_id=1648221755 instance=ExtResource("15_scmh2")]
 position = Vector2(508, 406)
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("16_c26bk")]

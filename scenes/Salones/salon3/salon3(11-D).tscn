@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d1pge4dpunmfd" path="res://Interacciones/botones libros/botonE.tscn" id="13_vm2yk"]
 [ext_resource type="PackedScene" uid="uid://c8f5u7mwdbkvy" path="res://scenes/Personajes/estudiante11d2.tscn" id="14_o6ntc"]
 [ext_resource type="PackedScene" uid="uid://bu6wcv5y1kock" path="res://scenes/Personajes/estudiante11d3.tscn" id="15_51nep"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="16_7agvf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
 size = Vector2(991.5, 237)
@@ -23,7 +24,7 @@ size = Vector2(991.5, 237)
 size = Vector2(61, 712)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_878pw"]
-size = Vector2(281, 152)
+size = Vector2(281, 193)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pqsxr"]
 size = Vector2(63, 13.25)
@@ -49,7 +50,7 @@ position = Vector2(575, 313)
 y_sort_enabled = true
 
 [node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=7345827]
-position = Vector2(457, 59)
+position = Vector2(450, 60)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=10463118]
@@ -69,7 +70,7 @@ position = Vector2(192.5, 127)
 shape = SubResource("RectangleShape2D_878pw")
 
 [node name="Arriba3" type="CollisionShape2D" parent="LimitesSalon" unique_id=1528375286]
-position = Vector2(1174, 102)
+position = Vector2(1187, 81.5)
 shape = SubResource("RectangleShape2D_878pw")
 
 [node name="Abajo2" type="CollisionShape2D" parent="LimitesSalon" unique_id=1718221144]
@@ -215,3 +216,5 @@ position = Vector2(783, 496)
 
 [node name="estudiante3" parent="." unique_id=1889965903 instance=ExtResource("15_51nep")]
 position = Vector2(408, 597)
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("16_7agvf")]

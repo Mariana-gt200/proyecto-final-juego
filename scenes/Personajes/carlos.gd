@@ -32,3 +32,5 @@ func on_dialogue_ended(dialogue):
 func _physics_process(delta: float) -> void:
 	if is_psicologa_close and Input.is_action_just_pressed("hablar") and not GameManager.is_dialogue_active:
 		DialogueManager.show_dialogue_balloon(carlos)
+		if GameManager.mission_actual==3 :
+			GameManager.misiones_estudiantes()

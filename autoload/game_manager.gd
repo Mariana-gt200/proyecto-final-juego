@@ -8,7 +8,13 @@ var conocio_a_erika:bool=false
 var respuesta_jessica:bool=false
 var respuesta_carlos:bool=false
 var respuesta_erika:bool=false
+var mission_actual=0
 
+func completar_misiones():
+	mission_actual+=1
+	
+func misiones_estudiantes():
+	mission_actual-=1
 
 
 func _ready() -> void:

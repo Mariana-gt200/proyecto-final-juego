@@ -12,7 +12,7 @@ func _input(event: InputEvent) -> void:
 		
 
 func pause_and_unpause():
-	pause_toggle=!pause_toggle
+	pause_toggle=!pause_toggle 
 	get_tree().paused=pause_toggle
 	self.visible=pause_toggle
 
@@ -23,7 +23,7 @@ func _on_reanudar_pressed() -> void:
 
 func _on_reiniciar_pressed() -> void:
 	get_tree().reload_current_scene()
-
+	
 
 func _on_ir_al_inicio_pressed() -> void:
 	get_tree().quit()

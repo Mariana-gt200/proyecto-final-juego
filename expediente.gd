@@ -33,3 +33,5 @@ func abrir_expediente():
 	# Fíjate que el símbolo $ esté pegado a la palabra CanvasLayer
 	$CanvasLayer/Panel/RichTextLabel.text = "[color=black]ALUMNO: " + nombre_alumno + "\n\nNOTAS:\n" + informacion + "[/color]"
 	$CanvasLayer/Panel.visible = true
+	if GameManager.mission_actual==2 or GameManager.mission_actual==4 or GameManager.mission_actual==6:
+			GameManager.completar_misiones()
