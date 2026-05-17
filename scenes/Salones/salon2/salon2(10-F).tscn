@@ -18,10 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://5kk8gxf0q4o3" path="res://scenes/Personajes/estudiante10F2.tscn" id="17_h1wjo"]
 [ext_resource type="PackedScene" uid="uid://bcqy1j4q6mrmj" path="res://scenes/Personajes/estudiante10F3.tscn" id="18_xw2s8"]
 [ext_resource type="PackedScene" uid="uid://dybeckvg1s3iv" path="res://scenes/Personajes/estudiante10F4.tscn" id="19_in4ak"]
-[ext_resource type="Script" uid="uid://cc6b3djhm1dqd" path="res://scenes/Salones/salon3/canvas_layer.gd" id="20_in4ak"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="19_xw2s8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
-size = Vector2(991.5, 236)
+size = Vector2(978.75, 236)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sg84n"]
 size = Vector2(61, 712)
@@ -44,15 +44,16 @@ size = Vector2(279, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sww78"]
 size = Vector2(60, 10.25)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35ttv"]
-
 [node name="Main" type="Node2D" unique_id=1423917372]
 y_sort_enabled = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=228830884]
+offset_left = -2.0
 offset_top = -11.0
 offset_right = 1153.0
 offset_bottom = 649.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("1_vdxde")
 expand_mode = 1
 
@@ -63,11 +64,11 @@ position = Vector2(575, 313)
 y_sort_enabled = true
 
 [node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=7345827]
-position = Vector2(472, 68)
+position = Vector2(465.625, 68)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=10463118]
-position = Vector2(-26, 361)
+position = Vector2(-15, 356)
 shape = SubResource("RectangleShape2D_sg84n")
 
 [node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=268124758]
@@ -236,7 +237,7 @@ position = Vector2(887, 13.9999695)
 rotation = 1.1397
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("12_ao20x")]
-position = Vector2(1005, 102)
+position = Vector2(997, 94)
 escena_destino = "uid://suhivdjgfra1"
 
 [node name="Expediente" parent="." unique_id=328183346 instance=ExtResource("13_tsegc")]
@@ -257,24 +258,6 @@ Nota confidencial: Se han detectado moretones en los antebrazos que el alumno ju
 [node name="botonE" parent="." unique_id=1314968727 instance=ExtResource("14_bpgl5")]
 position = Vector2(606, 160)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=975643698]
-script = ExtResource("20_in4ak")
-
-[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1700000027]
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_35ttv")
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel" unique_id=691926476]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="CanvasLayer/Panel/MarginContainer" unique_id=1119831389]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 0)
-
 [node name="Area2D" parent="." unique_id=174348233 instance=ExtResource("14_s3d88")]
 position = Vector2(85, 371)
 
@@ -292,5 +275,7 @@ position = Vector2(357, 601)
 
 [node name="estudiante4" parent="." unique_id=968189776 instance=ExtResource("19_in4ak")]
 position = Vector2(1081, 580)
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("19_xw2s8")]
 
 [editable path="MesaProfesor"]

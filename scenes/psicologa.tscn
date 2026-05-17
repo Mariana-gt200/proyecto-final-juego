@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4yjvbeqfyl2x" path="res://Scripts/Psicologa_script.gd" id="1_egq3c"]
 [ext_resource type="Texture2D" uid="uid://df6iqnhm3rcl5" path="res://texturas/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_1/Walk.png" id="2_mvjbq"]
+[ext_resource type="PackedScene" uid="uid://div6uftuy7rma" path="res://Interacciones/menuPausa.tscn" id="3_mvjbq"]
 
 [sub_resource type="Animation" id="Animation_yfiuq"]
 length = 0.001
@@ -94,6 +95,8 @@ position = Vector2(3, 3)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=869153955]
 position = Vector2(7, -76)
 shape = SubResource("RectangleShape2D_egq3c")
+
+[node name="pausa" parent="." unique_id=1502892582 instance=ExtResource("3_mvjbq")]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_abtvi"]
 [ext_resource type="PackedScene" uid="uid://bq1ogdxbg3tea" path="res://scenes/Salones/salon1/mesa.tscn" id="3_ixgo1"]
 [ext_resource type="PackedScene" uid="uid://klnp8donc8ls" path="res://scenes/Personajes/profesoraPasillo.tscn" id="7_abtvi"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="8_ixgo1"]
 [ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="9_amvy7"]
 [ext_resource type="PackedScene" uid="uid://iwuwofda1u6r" path="res://scenes/Personajes/estudiante2Pasillo.tscn" id="10_t4toy"]
 [ext_resource type="PackedScene" uid="uid://dij8uvvla7rip" path="res://scenes/Personajes/estudiante3Pasillo.tscn" id="11_cuxw4"]
@@ -12,7 +13,7 @@
 load_path = "res://.godot/imported/ChatGPT Image 13 may 2026, 03_28_17 p.m..png-f4d1edbc7e0a38226566af309c776ec7.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk718"]
-size = Vector2(168.1875, 366)
+size = Vector2(160.1875, 354)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sg84n"]
 size = Vector2(61, 712)
@@ -21,10 +22,10 @@ size = Vector2(61, 712)
 size = Vector2(1179, 210)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t4toy"]
-size = Vector2(265, 154)
+size = Vector2(254, 154)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cuxw4"]
-size = Vector2(299.875, 157)
+size = Vector2(290, 149.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmlx3"]
 size = Vector2(181.5, 155)
@@ -50,7 +51,7 @@ position = Vector2(575, 313)
 y_sort_enabled = true
 
 [node name="Arriba" type="CollisionShape2D" parent="LimitesSalon" unique_id=7345827]
-position = Vector2(69.90625, 173)
+position = Vector2(65.90625, 167)
 shape = SubResource("RectangleShape2D_lk718")
 
 [node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=10463118]
@@ -70,11 +71,11 @@ position = Vector2(579.5, 95)
 shape = SubResource("RectangleShape2D_ygoox")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="LimitesSalon" unique_id=919451880]
-position = Vector2(379.5, 274)
+position = Vector2(381, 274)
 shape = SubResource("RectangleShape2D_t4toy")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="LimitesSalon" unique_id=1223729584]
-position = Vector2(758.0625, 273)
+position = Vector2(760, 269.25)
 shape = SubResource("RectangleShape2D_cuxw4")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="LimitesSalon" unique_id=2089973631]
@@ -93,7 +94,7 @@ position = Vector2(1001, 542)
 position = Vector2(315, 489)
 
 [node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("9_amvy7")]
-position = Vector2(189, 252)
+position = Vector2(193, 238)
 escena_destino = "uid://x34jceuhntuc"
 
 [node name="puerta_teletransportadora2" parent="." unique_id=1202066731 instance=ExtResource("9_amvy7")]
@@ -101,7 +102,7 @@ position = Vector2(551, 248)
 escena_destino = "uid://daynur12fbyml"
 
 [node name="puerta_teletransportadora3" parent="." unique_id=517571169 instance=ExtResource("9_amvy7")]
-position = Vector2(952, 248)
+position = Vector2(949, 244)
 escena_destino = "uid://dnr8u7somo4o2"
 
 [node name="puerta_teletransportadora4" parent="." unique_id=2095765462 instance=ExtResource("9_amvy7")]
@@ -121,3 +122,9 @@ position = Vector2(686, 520)
 position = Vector2(85, 457)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=848481553]
+
+[node name="puerta_teletransportadora5" parent="." unique_id=95228200 instance=ExtResource("9_amvy7")]
+position = Vector2(6, 516)
+escena_destino = "uid://c22bcrmr4nltd"
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("8_ixgo1")]

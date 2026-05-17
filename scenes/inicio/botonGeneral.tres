@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://c6q0gc7l7r8ds"]
+
+[resource]
+resource_local_to_scene = true
+resource_name = "botones inicio"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 13
+border_width_top = 8
+border_width_right = 5
+border_width_bottom = 8
+border_blend = true

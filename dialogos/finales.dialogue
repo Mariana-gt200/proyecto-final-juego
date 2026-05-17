@@ -1,0 +1,15 @@
+
+~ start
+if not GameManager.conocio_a_erika:
+	[color=d62711]Director: Creo que a usted se le olvidó hablar con algún estudiante.
+else if not GameManager.conocio_a_carlos:
+	[color=d62711]Director: Creo que a usted se le olvidó hablar con algún estudiante.
+else if not GameManager.conocio_a_jessica:
+	[color=d62711]Director: Creo que a usted se le olvidó hablar con algún estudiante.
+else:
+	
+	[color=d62711]Director: Supongo que ya ha terminado su trabajo.
+	[color=#00CED1]Psicóloga: Claro, he estado llendo de salón en salón buscando a los estudiantes.
+	[color=d62711]Director: El tiempo dirá si los chicos han podido recuperarse, así que espero que sus charlas hayan servido como apoyo para ellos...
+	
+=> END

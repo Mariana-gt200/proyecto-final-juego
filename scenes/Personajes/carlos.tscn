@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csnuru0kwkdwl"]
 
-[ext_resource type="Script" uid="uid://c81yg52gmmce1" path="res://scenes/Personajes/jessica.gd" id="1_2ysj4"]
+[ext_resource type="Script" uid="uid://cj73pbg3b0cnm" path="res://scenes/Personajes/carlos.gd" id="1_2ysj4"]
 [ext_resource type="Texture2D" uid="uid://7snpcj08s2e1" path="res://texturas/Personajes/npcs/WhatsApp Image 2026-05-12 at 10.26.43 AM.png" id="2_2ysj4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jmioi"]

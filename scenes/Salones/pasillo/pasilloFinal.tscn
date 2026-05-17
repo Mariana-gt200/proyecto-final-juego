@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://c22bcrmr4nltd"]
+
+[ext_resource type="Script" uid="uid://bu5bfk2ppj78l" path="res://scenes/Salones/pasillo/pasillo_final.gd" id="1_ihg3e"]
+[ext_resource type="Texture2D" uid="uid://b3dky7juhsye4" path="res://texturas/fondos/ChatGPT Image 16 may 2026, 03_10_36 p.m..png" id="1_pn8m8"]
+[ext_resource type="PackedScene" uid="uid://dui2svc3wdtn1" path="res://scenes/psicologa.tscn" id="2_vnf3b"]
+[ext_resource type="PackedScene" uid="uid://ctbindktcrn5w" path="res://scenes/Salones/puerta_teletransportadora.tscn" id="4_epxrw"]
+[ext_resource type="PackedScene" uid="uid://d1csyyya2f2do" path="res://Interacciones/misiones.tscn" id="5_ihg3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pn8m8"]
+size = Vector2(67.5, 712)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vchwj"]
+size = Vector2(168.1875, 366)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnf3b"]
+size = Vector2(1179, 210)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epxrw"]
+size = Vector2(940, 156)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihg3e"]
+size = Vector2(1117, 139)
+
+[node name="PasilloFinal" type="Node2D" unique_id=457836408]
+script = ExtResource("1_ihg3e")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1774337514]
+offset_right = 1153.0
+offset_bottom = 651.0
+texture = ExtResource("1_pn8m8")
+expand_mode = 1
+
+[node name="LimitesSalon" type="StaticBody2D" parent="." unique_id=1341061635]
+y_sort_enabled = true
+
+[node name="ParedIzquierda" type="CollisionShape2D" parent="LimitesSalon" unique_id=397935639]
+position = Vector2(0.25, 349)
+shape = SubResource("RectangleShape2D_pn8m8")
+
+[node name="Abajo" type="CollisionShape2D" parent="LimitesSalon" unique_id=369086143]
+position = Vector2(73, 789)
+shape = SubResource("RectangleShape2D_vchwj")
+
+[node name="ParedDerecha" type="CollisionShape2D" parent="LimitesSalon" unique_id=49764732]
+position = Vector2(1156, 326)
+shape = SubResource("RectangleShape2D_pn8m8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimitesSalon" unique_id=479346422]
+position = Vector2(579.5, 95)
+shape = SubResource("RectangleShape2D_vnf3b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LimitesSalon" unique_id=1728911268]
+position = Vector2(671, 266)
+shape = SubResource("RectangleShape2D_epxrw")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="LimitesSalon" unique_id=1004299398]
+position = Vector2(650, 675)
+shape = SubResource("RectangleShape2D_ihg3e")
+
+[node name="psicologa" parent="." unique_id=1170587380 instance=ExtResource("2_vnf3b")]
+y_sort_enabled = true
+position = Vector2(951, 510)
+
+[node name="puerta_teletransportadora" parent="." unique_id=1525846686 instance=ExtResource("4_epxrw")]
+position = Vector2(1136, 527)
+escena_destino = "uid://suhivdjgfra1"
+
+[node name="puerta_teletransportadora2" parent="." unique_id=1001711749 instance=ExtResource("4_epxrw")]
+position = Vector2(108, 272)
+scale = Vector2(1.72, 1)
+escena_destino = "uid://dtj6galg0iq1s"
+
+[node name="Misiones" parent="." unique_id=2093156431 instance=ExtResource("5_ihg3e")]

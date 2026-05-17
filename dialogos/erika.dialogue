@@ -1,5 +1,6 @@
 ~ start
- if not GameManager.conocio_a_erika
+ if not GameManager.conocio_a_erika:
+	set GameManager.conocio_a_erika=true
 	[color=#00CED1]Psicóloga: Hola Erika ¿Cómo estás? no te veo bien.
 	[color=#FFFF00]Erika: Hola... estoy bien, supongo.
 	[color=#00CED1]Psicóloga: He estado revisando tu expediente...
@@ -11,7 +12,6 @@
 		set GameManager.respuesta_erika=true
 	- Oh... no creo poder hacer algo al respecto
 		[color=#FFFF00]Erika: Eso esperaba de todas formas... Hasta luego.
-	set GameManager.conocio_a_erika=true
 else:
 	[color=#FFFF00]Erika: Me tengo que ir, adios.
 => END
